@@ -1,0 +1,691 @@
+@media screen and (max-width: 1720px) { 
+  .container {
+    padding: 0 30px;
+  }
+  .header {
+    &__help-tel {
+      margin-right: 2em;
+    }
+    &__help-search {
+      display: block;
+      width: 24px;
+    }
+  }
+
+  .feature {
+    &__list {
+      padding: 3em 0;
+    }
+  }
+
+
+  .events {
+    &__left {
+      padding: 0;
+      flex: 0 0 10%;
+    }
+    &__list {
+      justify-content: space-evenly;
+    }
+  }
+
+  .mission {
+    &__left {
+      text-align: center;
+    }
+    &__left img {
+      max-height: 200px;
+    }  
+    .left__img {
+      margin: 0 1em 1em 0;
+      &:nth-child(3) {
+        transform: none;
+      }
+    }
+
+    .teachers {
+      &__item {
+        flex: 0 0 30%;
+      }
+    }
+
+}
+
+  .photos {
+    padding: 3em 0 3em;
+    &__title-block {
+      order: -1;
+      margin: 0 auto;
+      min-width: 100%;
+    }
+    &__text {
+      padding-bottom: 2em;
+    }
+    &__inner {
+      justify-content: center;
+    }
+    &__img {
+      margin: 0 10px 10px 0;
+    }
+    &__img img {
+      max-width: 100%;
+      max-height: 200px;
+    }
+  }
+
+  .news {
+    padding-bottom: 5em;
+    &__list {
+      justify-content: space-evenly;
+    }
+    &__list-item {
+      flex: 0 0 30%;
+      margin-bottom: 2em;
+    }
+    &__list-nav {
+      justify-content: space-evenly;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1360px) {
+  .header {
+    &__logo {
+      order: 0;
+    }
+    &__menu {
+      display: none;
+    }
+    &__menu_icon {
+      display: block;
+    }
+    &__help {
+      display: none;
+    }
+  }
+
+  .feature {
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      img {
+        margin: 0 0 1em 0;
+        height: 50px;
+      }
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+
+  .events {
+    &__item {
+      text-align: center;
+      flex-direction: column;
+    }
+    .item__circle {
+      margin-bottom: 1em;
+    }
+    .item__inner {
+      margin: 0 ;
+      min-width: 100%;
+    }
+  }
+
+
+  .choose {
+    &__item {
+      flex: 0 0 40%;
+    }
+  }
+
+  .mission {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__left {
+      order: 2;
+    }
+    &__right {
+      order: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .right__text { 
+      text-align: center;
+    }
+    .right__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .right__item {
+      flex: 0 0 40%;
+    }
+    &__left {
+      margin: 0 auto;
+    }
+  }
+
+  .teachers {
+    &__items {
+      justify-content: space-evenly;
+    }
+    &__item {
+      flex: 0 0 26%;
+      margin-bottom: 3em;
+    }
+  }
+
+  .reviews {
+    .blockquote__inner {
+      max-width: 700px;
+    }
+  }
+
+  .feedback {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__text { 
+      text-align: center;
+      margin: 0;
+      max-width: 100%;
+      padding-bottom: 1em;
+    }
+    &__input-block {
+      flex: 0 0 100%;
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    &__menu {
+      flex-wrap: wrap;
+    }
+    &__list {
+      flex: 0 0 15%;
+      max-width: 100%;
+      margin-bottom: 2em;
+    }
+    &__info-inner {
+      flex-wrap: wrap;
+      padding: 2em 0;
+      justify-content: center;
+    }
+    &__info {
+      padding-bottom: 5em;
+    }
+  }
+
+  .social {
+    min-width: 600px;
+  }
+
+
+  .policy__list {
+    display: none;
+  }
+
+} 
+
+
+@media screen and (max-width: 940px) {
+  .events {
+    padding: 4em 20px;
+    &__container {
+      transform: none;
+      padding: 0;
+    }
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__left {
+      margin: 0 auto;
+      padding: 0 0 2em 0;
+      text-align: center;
+    }
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex-wrap: wrap;
+      flex: 0 0 100%;
+      text-align: center;
+      padding-bottom: 2em;
+    }
+    .item__circle {
+      margin: 0 auto;
+    }
+    .item__inner {
+      min-width: 100%;
+    }
+    &__item + .events__item {
+      margin: 0;
+    }
+    .item__inner {
+      margin: 0;
+      padding: 2em 0;
+    }
+  }
+  
+  .choose {
+    &__item {
+      flex: 0 0 45%;
+    }
+  }
+
+  .mission {
+    .right__item {
+      flex: 0 0 80%;
+    }
+  }
+
+  .teachers {
+    padding: 5em 0;
+    &__item {
+      flex: 0 0 40%;
+    }
+  }
+
+  .reviews {
+    .blockquote__inner {
+      max-width: 500px;
+    }
+  }
+
+  .footer {
+    &__menu {
+      flex-wrap: wrap;
+      justify-content: end;
+    }
+    &__list {
+      flex: 0 0 30%;
+      max-width: 100%;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+
+  .container {
+    padding: 0 50px;
+  }
+  
+  .header {
+    padding: 2em 0 3em;
+    &__inner {
+      justify-content: space-between;
+    }
+    &__logo {
+      font-size: 2em;
+    }
+    &__menu {
+      display: none;
+    }
+    &__help {
+      display: none;
+    }
+    &__menu_icon {
+      display: flex;
+    }
+  }
+
+  .slider {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__left {
+      margin: 0 auto;
+      max-width: 400px;
+    }
+    &__right {
+      display: none;
+    }
+    &__title {
+      font-size: 1.8em;
+      line-height: 1.2em;
+      padding: .7em 0 1.5em;
+    }
+    &__btn {
+      margin: 2em auto;
+    }
+  }
+
+  .feature {
+    padding: 3em 0 2em;
+    &__list {
+      padding: 3em 0 0 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__item {
+      display: flex;
+      flex: 100%;
+      flex-direction: column;
+      padding-bottom: 2.5em;
+      text-align: center;
+    }
+    &__img {
+      margin: 0 auto;
+      margin-bottom: 1em;
+      height: 3em;
+    }
+  } 
+
+  .quote {
+    h2 {
+      line-height: 1.2em;
+      font-size: 2.6em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  
+  .auth {
+    flex-wrap: wrap;
+    &__img {
+      margin: 0 2em 0 0;
+    }
+    figcaption {
+      padding-top: .8em;
+    }
+  }
+  
+  
+  .achievements {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex: 1 1 100%;
+      padding: 2em 0;
+    }
+  }
+  
+  
+  .choose {
+    &__title {
+      font-size: 2.6em;
+    }
+    &__item {
+      flex: 0 0 80%;
+    }
+  }
+  
+  .mission {
+    padding: 0 20px;
+    &__left {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      order: 2;
+      img {
+        max-width: 100%;
+        height: 200px;
+      }
+    }
+    .left__img {
+      margin: 0 1em 1em 0;
+    }
+    &__right {
+      order: 1;
+      text-align: center;
+    }
+    .right__title {
+      line-height: 1.5em;
+      font-size: 2.6em;
+    }
+    .right__item {
+      padding: 7em 0 5em 0;
+      &::after {
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .teachers {
+    padding: 5em 0 5em;
+    &__title {
+      font-size: 2.6em;
+      line-height: 1.2em;
+      padding-bottom: 0.8em;
+    }
+    &__items {
+      justify-content: center;
+    }
+    &__item {
+      margin-bottom: 3em;
+      flex: 0 0 60%;
+    }
+    &__item-name {
+      font-size: 1.2em;
+      padding: 0;
+    }
+  }
+  
+
+  .reviews {
+    &__title {
+      font-size: 2.6em;
+      line-height: 1.2em;
+      padding-bottom: 0.8em;
+    }
+    .blockquote__text {
+      font-size: 1em;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+  }
+  
+  
+  // photos
+  
+  .photos {
+    padding: 3em 0 3em;
+    &__title-block {
+      order: -1;
+      margin: 0 auto;
+    }
+    &__title {
+      font-size: 2.6em;
+      line-height: 1.2em;
+      padding-bottom: 0.8em;
+    }
+    &__text {
+      padding-bottom: 2em;
+    }
+    &__inner {
+      justify-content: center;
+    }
+    &__img {
+      margin: 0 10px 10px 0;
+    }
+    &__img img {
+      max-width: 100%;
+      max-height: 100px;
+    }
+  }
+
+
+
+
+  .news {
+    padding: 3em 0 3em;
+    &__title {
+      font-size: 2.6em;
+      line-height: 1.2em;
+      padding-bottom: 0.8em;
+    }
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__list-item {
+      margin-bottom: 3em;
+      flex: 0 0 100%;
+    }
+    .list-item-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .list-item-title {
+      font-size: 1.2em;
+      line-height: 1em;
+    }
+    .list-item-text {
+      font-size: 1em;
+    }
+    .list-item-auth {
+      font-size: .7em;
+    }
+    .list-item--more {
+      text-align: center;
+    }
+    .news__list-nav {
+      display: block;
+      text-align: center;
+    }
+    .news__buttons {
+      margin-bottom: 3em;
+    }
+  }
+
+  .feedback {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__text {
+      max-width: 100%;
+      font-size: 2em;
+      line-height: 1.2em;
+      padding-bottom: 2em;
+      margin: 0;
+    }
+    &__input-block {
+      min-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__input {
+      min-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 1em;
+      font-size: 1em;
+      padding: 1em 1em;
+    }
+    &__btn {
+      border-radius: 6px;
+      min-width: 100%;
+    }
+  }
+
+
+
+  .footer {
+    padding: 2em 0;
+    &__list {
+      min-width: 50%;
+      margin: 1em 0;
+    }
+    &__inner {
+      display: flex;
+    }
+    .footer__info-address-list {
+      flex-wrap: wrap;
+    }
+    .address-list-item {
+      min-width: 100%;
+      padding: .5em 0;
+      text-align: center;
+    }
+  }
+
+  .social {
+    min-width: 100%;
+    &__title {
+      text-align: center;
+    }
+    &__list {
+      flex-wrap: wrap;
+      max-width: 100%;
+      justify-content: space-evenly;
+      margin: 0 0 2em;
+    }
+    &__inner {
+      flex-wrap: wrap;
+      min-width: 100%;
+      padding: 2em 0 0 0;
+      justify-content: space-around;
+    }
+    &__btn {
+      margin: 0 0 2em 0;
+    }
+  }
+
+  .policy {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    &__list {
+      padding-bottom: 1em;
+    }
+    &__info {
+      font-size: .8em;
+      padding-bottom: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .auth__img {
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
+
+  .choose {
+    &__item {
+      flex: 0 0 100%;
+    }
+  }
+
+
+  .teachers {
+    &__item {
+      flex: 0 0 80%;
+    }
+  }
+
+
+  .reviews {
+    .blockquote__inner {
+      max-width: 280px;
+      font-size: 1em;
+    }
+    .blockquote {
+      &__inner {
+        &::after {
+          font-size: 38px;
+        }
+        &::before {
+          font-size: 38px;
+        }
+    }
+  }
+  }
+}

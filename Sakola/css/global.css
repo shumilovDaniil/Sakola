@@ -12,6 +12,8 @@ a {
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 button {
   border: none;
@@ -28,15 +30,4 @@ button {
 
 input {
   background-color: transparent;
-}
-
-.title {
-  font-family: 'Cairo', sans-serif;
-  max-width: 640px;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 80px;
-  color: #080A12;
-  margin: 0 auto;
-  text-align: center;
 }
