@@ -97,11 +97,11 @@
     &__menu {
       display: none;
     }
-    &__menu_icon {
-      display: block;
-    }
     &__help {
       display: none;
+    }
+    &__menu_icon {
+      display: block;
     }
   }
 
@@ -161,10 +161,10 @@
     .right__list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: center;
     }
     .right__item {
-      flex: 0 0 40%;
+      flex: 0 0 70%;
     }
     &__left {
       margin: 0 auto;
@@ -305,7 +305,7 @@
       justify-content: end;
     }
     &__list {
-      flex: 0 0 30%;
+      flex: 0 0 33.332%;
       max-width: 100%;
       margin-bottom: 2em;
     }
@@ -332,9 +332,6 @@
     }
     &__help {
       display: none;
-    }
-    &__menu_icon {
-      display: flex;
     }
   }
 
@@ -608,27 +605,17 @@
     .address-list-item {
       min-width: 100%;
       padding: .5em 0;
-      text-align: center;
     }
   }
 
   .social {
     min-width: 100%;
-    &__title {
-      text-align: center;
-    }
     &__list {
       flex-wrap: wrap;
-      max-width: 100%;
-      justify-content: space-evenly;
+      max-width: 70%;
       margin: 0 0 2em;
     }
-    &__inner {
-      flex-wrap: wrap;
-      min-width: 100%;
-      padding: 2em 0 0 0;
-      justify-content: space-around;
-    }
+    
     &__btn {
       margin: 0 0 2em 0;
     }
