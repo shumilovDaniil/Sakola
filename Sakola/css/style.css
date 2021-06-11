@@ -1111,17 +1111,11 @@
   max-width: 180px;
 }
 
-.footer__list-title {
-  font-size: 20px;
-  line-height: 1.85;
-  color: #EBECF0;
-}
-
-.footer li {
+.footer__list li {
   padding-bottom: 14px;
 }
 
-.footer li a {
+.footer__list li a {
   font-family: "Cairo", sans-serif;
   font-weight: 600;
   line-height: 1.875;
@@ -1130,8 +1124,14 @@
   transition: color .3s ease;
 }
 
-.footer li a:hover {
+.footer__list li a:hover {
   color: #2459A8;
+}
+
+.footer__list-title {
+  font-size: 20px;
+  line-height: 1.85;
+  color: #EBECF0;
 }
 
 .footer__info-inner {

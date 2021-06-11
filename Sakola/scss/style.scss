@@ -1005,6 +1005,20 @@ $font-decor: 'Poppins', sans-serif;
   
   &__list {
     max-width: 180px;
+    li {
+      padding-bottom: 14px;
+      a {
+        font-family: $title-font;
+        font-weight: 600;
+        line-height: 1.875;
+        color: $grey;
+        transition: color .3s ease;
+      
+        &:hover {
+          color: $primarySoft;
+        }
+      }
+    }
   }
   
   &__list-title {
@@ -1013,20 +1027,6 @@ $font-decor: 'Poppins', sans-serif;
     color: $greySoft;
   }
 
-  li {
-    padding-bottom: 14px;
-    a {
-      font-family: $title-font;
-      font-weight: 600;
-      line-height: 1.875;
-      color: $grey;
-      transition: color .3s ease;
-    
-      &:hover {
-        color: $primarySoft;
-      }
-    }
-  }
   
   
   &__info-inner {
@@ -1092,7 +1092,7 @@ $font-decor: 'Poppins', sans-serif;
       color: $primarySoft;
     }
   }
-  
+
   &__inner {
     display: flex;
     flex-wrap: wrap;
