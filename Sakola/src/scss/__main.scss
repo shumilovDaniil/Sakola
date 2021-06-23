@@ -1,0 +1,281 @@
+.slider {
+  color: $grey;
+  
+  &__inner {
+    
+    @media (min-width: 1240px) {
+      padding-bottom: 112px;
+      border-bottom: 1px solid rgba(235, 236, 240, .17);;
+    }
+  }
+  
+  &__left {
+    max-width: 340px;
+
+    @media (min-width: 740px) {
+      max-width: 560px;
+    }
+
+    @media (min-width: 1240px) {
+      margin-left: 68px;
+    }
+  }
+  
+  strong {
+    color: $blue;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.35294;
+    text-transform: uppercase;
+
+    @media (min-width: 1240px) {
+      display: inline-block;
+      font-size: 16px;
+      padding-bottom: 13px;
+    }
+  }
+
+  h1 {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.09090;
+    color: $greySoft;
+    margin-bottom: 1em;
+
+    @media (min-width: 740px) {
+      font-size: 3em;
+    }
+
+    @media (min-width: 1240px) {
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 60px;
+      color: $greySoft;
+      margin-bottom: 27px;
+    }
+  }
+
+  p {
+    margin-bottom: 2em;
+
+    @media (min-width: 1240px) {
+      margin-bottom: 55px;
+    }
+  }
+
+  a {
+    padding: 13px 55px;
+    background: $darkBlue;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.88888;
+    color: $white;
+    border-radius: 6px;
+    transition: color .3s ease, background-color .3s ease;
+
+    @media (min-width: 1240px) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: $darkBlue;
+      background: $white;
+    }
+  }
+}
+
+.feature {
+  color: $grey;
+
+  &__list {
+    padding: 4em 0 2em 0;
+    text-align: center;
+    
+    @media (min-width: 740px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (min-width: 1240px) {
+      padding: 40px 0px 40px 102px;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-bottom: 2em;
+    
+    @media (min-width: 740px) {
+      flex: 0 0 45%;
+    }
+    
+    @media (min-width: 1240px) {
+      display: flex;
+      text-align: left;
+      flex: 0 0 27.333%;
+      margin: 0;
+    }
+  }
+
+  img {
+    width: 3em;
+
+    @media (min-width: 1240px) {
+      margin-right: 31px;
+      max-height: 78px;
+      width: auto;
+    }
+  }
+
+  h2 {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.875;
+    color: $greySoft;
+
+    @media (min-width: 1240px) {
+      line-height: 1.275;
+      margin-bottom: 12px;
+    }
+  }
+
+  .feature__item-text {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.events {
+  color: $white;
+  background: $darkBlue;
+  text-align: center;
+  font-size: 16px;
+
+  &__inner {
+    padding: 2em 0;
+
+    @media (min-width: 1620px) {
+      padding: 80px 0px 83px;
+      display: flex;
+    }
+  }
+
+  &__side {
+    margin-bottom: 2em;
+
+    @media (min-width: 1620px) {
+      margin: auto 32px auto 0;
+      text-align: left;
+    }
+  }
+
+  h3 {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.875;
+    margin-bottom: 10px;
+
+    @media (min-width: 1372px) {
+      font-size: 24px;
+    }
+  }
+
+  &__btn {
+    font-family: 'icomoon';
+    font-size: 18px;
+    transition: color .3s ease;
+
+    &:hover {
+      color: $dark;
+    }
+
+    & + .events__btn {
+      margin-left: 28px;
+    }
+  }
+
+  &__list {
+
+    @media (min-width: 740px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 1620px) {
+      transform: translate(10.6%, -12%);
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__item {
+    max-width: 288px;
+    margin: 0 auto 2em auto;
+
+    @media (min-width: 740px) {
+      flex: 0 0 50%;
+    }
+
+    @media (min-width: 1372px) {
+      display: flex;
+      max-width: 450px;
+      text-align: left;
+    }
+
+    @media (min-width: 1620px) {
+      margin: 0 88px 0px 0px;
+    }
+  }
+
+  p {
+    color: $grey;
+  }
+
+  h4 {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  time {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 2.5;
+  }
+
+  &__item-circle {
+    margin: 0 auto;
+    background: $yellow;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+    border-radius: 50%;
+    color: #000; 
+    line-height: 1;
+    font-family: $title-font;
+    margin-bottom: 1em;
+    text-align: center;
+
+    @media (min-width: 1240px) {
+      min-width: 108px;
+      height: 108px;
+    }
+
+    @media (min-width: 1372px) {
+      margin-right: 32px;
+    }
+  
+    span {
+      font-size: 2em;
+    }
+  }
+}
