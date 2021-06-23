@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 640px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 740px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1616px;
+    padding: 0 10px;
+  }
+}
+
+.header,
+.slider,
+.feature {
+  background: #080A12;
+  color: #fff;
+}
+
+.logo {
+  font-size: 2em;
+  font-family: "MuseoModerno", sans-serif;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  color: #fff;
+}
+
+@media (min-width: 1240px) {
+  .logo {
+    font-size: 39px;
+  }
+}
+
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  margin-right: .3em;
+}
+
+@media (min-width: 1240px) {
+  .logo img {
+    margin-right: 17px;
+  }
+}
+
+.logo:hover {
+  color: #2459A8;
+}
+
+.choose {
+  padding: 2em 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #080A12;
+  background: #F9F9F9;
+}
+
+@media (min-width: 1650px) {
+  .choose {
+    padding: 70px 0;
+  }
+}
+
+@media (min-width: 1240px) {
+  .choose {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.choose__inner {
+  max-width: 600px;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 740px) {
+  .choose__inner {
+    margin: 0 auto;
+  }
+}
+
+.choose h2 {
+  font-size: 2em;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  line-height: 1.33333;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 740px) {
+  .choose h2 {
+    margin: 0 auto 8px;
+    font-size: 60px;
+  }
+}
+
+.choose__list {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 568px) {
+  .choose__list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1240px) {
+  .choose__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.choose__item {
+  background: #fff;
+  border: 1px solid #EBECF0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 568px) {
+  .choose__item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 878px) {
+  .choose__item {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .choose__item {
+    width: 27%;
+    margin: 15px;
+    padding: 60px 60px 50px 40px;
+  }
+}
+
+.choose img {
+  width: auto;
+  height: 28px;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 1240px) {
+  .choose img {
+    height: 38px;
+    width: 38px;
+    margin-bottom: 30px;
+  }
+}
+
+.choose h4 {
+  margin-bottom: 1em;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.06666;
+}
+
+@media (min-width: 1240px) {
+  .choose h4 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=choose.css.map */

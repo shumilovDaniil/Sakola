@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 640px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 740px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1616px;
+    padding: 0 10px;
+  }
+}
+
+.header,
+.slider,
+.feature {
+  background: #080A12;
+  color: #fff;
+}
+
+.logo {
+  font-size: 2em;
+  font-family: "MuseoModerno", sans-serif;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  color: #fff;
+}
+
+@media (min-width: 1240px) {
+  .logo {
+    font-size: 39px;
+  }
+}
+
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  margin-right: .3em;
+}
+
+@media (min-width: 1240px) {
+  .logo img {
+    margin-right: 17px;
+  }
+}
+
+.logo:hover {
+  color: #2459A8;
+}
+
+.teachers__inner {
+  padding: 2em 0;
+  max-width: 623px;
+  text-align: center;
+  margin: 0 auto;
+  color: #363848;
+}
+
+@media (min-width: 1330px) {
+  .teachers__inner {
+    padding: 0;
+  }
+}
+
+.teachers h2 {
+  font-size: 2em;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  line-height: 1.33333;
+  margin-bottom: 1em;
+  color: #080A12;
+}
+
+@media (min-width: 1330px) {
+  .teachers h2 {
+    font-size: 58px;
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: 1330px) {
+  .teachers p {
+    margin-bottom: 50px;
+  }
+}
+
+.teachers__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 564px) {
+  .teachers__items {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.teachers img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.teachers__item {
+  text-align: center;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0 7px 22px rgba(143, 134, 196, 0.07);
+          box-shadow: 0 7px 22px rgba(143, 134, 196, 0.07);
+  border-radius: 6px;
+  color: #202020;
+  -webkit-transition: color .3s ease, background-color .3s ease;
+  transition: color .3s ease, background-color .3s ease;
+}
+
+.teachers__item:hover {
+  background: #023AA2;
+  color: #fff;
+}
+
+@media (min-width: 564px) {
+  .teachers__item {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 826px) {
+  .teachers__item {
+    max-width: 28%;
+  }
+}
+
+@media (min-width: 1330px) {
+  .teachers__item {
+    max-width: 18%;
+    margin-bottom: 100px;
+  }
+}
+
+.teachers__item-name {
+  padding: .3em 0 1em;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.33333;
+}
+
+@media (min-width: 1330px) {
+  .teachers__item-name {
+    padding: 12px 0 37px;
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=teachers.css.map */

@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 640px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 740px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1616px;
+    padding: 0 10px;
+  }
+}
+
+.header,
+.slider,
+.feature {
+  background: #080A12;
+  color: #fff;
+}
+
+.logo {
+  font-size: 2em;
+  font-family: "MuseoModerno", sans-serif;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  color: #fff;
+}
+
+@media (min-width: 1240px) {
+  .logo {
+    font-size: 39px;
+  }
+}
+
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  margin-right: .3em;
+}
+
+@media (min-width: 1240px) {
+  .logo img {
+    margin-right: 17px;
+  }
+}
+
+.logo:hover {
+  color: #2459A8;
+}
+
+.feedback {
+  background: #023AA2;
+  color: #fff;
+}
+
+.feedback__inner {
+  padding: 2em 0;
+  text-align: center;
+}
+
+@media (min-width: 883px) {
+  .feedback__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1240px) {
+  .feedback__inner {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 126px 0;
+  }
+}
+
+.feedback__title {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 1.47368;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 564px) {
+  .feedback__title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 883px) {
+  .feedback__title {
+    margin-bottom: 0;
+    text-align: left;
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .feedback__title {
+    font-size: 38px;
+    max-width: 533px;
+  }
+}
+
+.feedback__content {
+  overflow: auto;
+}
+
+@media (min-width: 508px) {
+  .feedback__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 883px) {
+  .feedback__content {
+    max-height: 60px;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.feedback__input {
+  border-radius: 6px;
+  width: 100%;
+  padding: 18px 20px;
+  background: #023AA2;
+  border: 1px solid #EBECF0;
+  color: #EBECF0;
+  font-size: .8em;
+  line-height: 1.38888;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 508px) {
+  .feedback__input {
+    width: calc(100% - 198px);
+    margin-bottom: 0;
+    border-radius: 6px 0 0 6px;
+  }
+}
+
+@media (min-width: 1403px) {
+  .feedback__input {
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+  }
+}
+
+.feedback__btn {
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  padding: 18px 49px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #023AA2;
+  background: #fff;
+  text-transform: uppercase;
+  -webkit-transition: color .3s ease, background-color .3s ease;
+  transition: color .3s ease, background-color .3s ease;
+  cursor: pointer;
+}
+
+.feedback__btn:hover {
+  background: #080A12;
+  color: #fff;
+}
+
+@media (min-width: 508px) {
+  .feedback__btn {
+    max-width: 198px;
+    border-radius: 0 6px 6px 0;
+  }
+}
+/*# sourceMappingURL=feedback.css.map */

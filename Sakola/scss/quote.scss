@@ -1,0 +1,87 @@
+@import "_fonts";
+@import "_vars";
+@import "_global";
+
+.quote {
+  background: no-repeat top center url(../images/content/bg-fig.jpg);
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.77777;
+  color: $dark;
+
+  &__inner {
+    padding: 2em 0;
+    
+    @media (min-width: 740px) {
+      margin: 0 auto;
+      max-width: 752px;
+      padding: 110px 0;
+    }
+  }
+
+  strong {
+    display: block;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: $darkBlue;
+    font-family: 'Open Sans';
+    
+    @media (min-width: 740px) {
+      margin-bottom: 17px;
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.33333;
+    margin-bottom: 1em;
+
+    @media (min-width: 740px) {
+      font-size: 60px;
+      margin-bottom: 36px;
+    }
+  }
+
+  p {
+    margin-bottom: 1em;
+
+    @media (min-width: 740px) {
+      margin-bottom: 104px;
+    }
+  }
+
+  .auth {
+
+    @media (min-width: 740px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .auth__inner {
+
+    @media (min-width: 740px) {
+      transform: translateX(10%);
+    }
+  }
+  
+  .auth__sign {
+    
+    @media (min-width: 740px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  img {
+    
+    @media (min-width: 740px) {
+      object-fit: contain;
+    }
+  }
+}

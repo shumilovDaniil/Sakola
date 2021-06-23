@@ -1,0 +1,112 @@
+@import "_fonts";
+@import "_vars";
+@import "_global";
+
+.feedback {
+  background: $darkBlue;
+  color: $white;
+
+  &__inner {
+    padding: 2em 0;
+    text-align: center;
+
+    @media (min-width: 883px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (min-width: 1240px) {
+      justify-content: space-evenly;
+      padding: 126px 0;
+    }
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 1.47368;
+    margin-bottom: 1em;
+
+    @media (min-width: 564px) {
+      font-size: 28px;
+    }
+
+    @media (min-width: 883px) {
+      margin-bottom: 0;
+      text-align: left;
+      max-width: 380px;
+    }
+
+    @media (min-width: 1240px) {
+      font-size: 38px;
+      max-width: 533px;
+    }
+  }
+
+  &__content {
+    overflow: auto;
+
+    @media (min-width: 508px) {
+      display: flex;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 883px) {
+      max-height: 60px;
+      margin: 0;
+      width: 50%;
+    }
+  }
+  
+  &__input {
+    border-radius: 6px;
+    width: 100%;
+    padding: 18px 20px;
+    background: $darkBlue;
+    border: 1px solid $greySoft;
+    color: $greySoft;
+    font-size: .8em;
+    line-height: 1.38888;
+    margin-bottom: 1em;
+
+    @media (min-width: 508px) {
+      width: calc(100% - 198px);
+      margin-bottom: 0;
+      border-radius: 6px 0 0 6px;
+    }
+
+    @media (min-width: 1403px) {
+      padding: 10px 30px 10px 30px;
+      font-size: 18px;
+    }
+  }
+  
+  &__btn {
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+    padding: 18px 49px;
+    font-family: $font-decor;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.5;
+    color: $darkBlue;
+    background: $white;
+    text-transform: uppercase;
+    transition: color .3s ease, background-color .3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      background: $dark;
+      color: $white;
+    }
+    
+    @media (min-width: 508px) {
+      max-width: 198px;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}
