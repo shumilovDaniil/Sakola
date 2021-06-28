@@ -1,13 +1,13 @@
 added:
 
 HTML:
-academics.html
+academics.html //
 contact.html
 
 SCSS:
-academics.scss
-contact.scss
-__academ-about.scss
+academics.scss //
+contact.scss // 
+__academ-about.scss //
 __form.scss
 
 DOCX:
