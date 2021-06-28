@@ -1,0 +1,100 @@
+@import "_reset";
+@import "_global";
+@import "_vars";
+@import "_fonts";
+
+@import "__header";
+@import "__first";
+@import "__partners";
+@import "__academ-about";
+@import "__achievements";
+@import "__location";
+@import "__feedback";
+@import "__footer";
+
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid $greySoft;
+  
+  @media (min-width: 920px) {
+    margin-bottom: 200px;
+  }
+
+  &__inner {
+    margin-bottom: 2em;
+
+
+    @media (min-width: 1240px) {
+      padding: 32px 0 0;
+    }
+  }
+
+  a {
+    color: $dark;
+    transition: color .3s ease;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.main {
+  color: $hardGrey;
+  padding-bottom: 4em;
+
+  @media (min-width: 920px) {
+    padding-bottom: 150px;
+  }
+
+  h1 {
+    color: $dark;
+  }
+
+  a {
+    padding: 13px 56px;
+    background: $darkBlue;
+    border: none;
+    box-shadow: 0 19px 29px rgba(2, 58, 162, .26);
+
+    &:hover {
+      border: none;
+    }
+  }
+}
+
+.partners {
+  padding-bottom: 150px;
+}
+
+.academ-about {
+
+  margin-bottom: 3em;
+
+  @media (min-width: 920px) {
+    margin-bottom: 200px;
+  }
+
+  &.academ-about--alone {
+
+    .academ-about__img {
+
+      @media (min-width: 1242px) {
+        justify-content: flex-start;
+      }
+    }
+
+    img {
+      transform: none;
+      position: relative;
+    }
+  }
+}
+
+.achievements {
+
+  &__list {
+    margin-bottom: 55px;
+  }
+}

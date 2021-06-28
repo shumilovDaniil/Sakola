@@ -1,0 +1,17 @@
+@import "_reset";
+@import "_global";
+@import "_vars";
+@import "_fonts";
+
+@import "__header";
+@import "__first";
+@import "__event-list";
+@import "__feedback";
+@import "__footer";
+
+
+.header, .main {
+  color: $greySoft;
+  background: $darkBlue;
+}
+

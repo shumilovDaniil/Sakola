@@ -1,0 +1,120 @@
+.reviews {
+  text-align: center;
+  padding-bottom: 2em;
+  
+  @media (min-width: 1505px) {
+    padding-bottom: 100px;
+  } 
+  
+  &__inner {
+    max-width: 584px;
+    color: $black;
+    margin: 0 auto;
+
+    @media (min-width: 1114px) {
+      // padding: 70px 0 80px;
+      padding: 0;
+    }
+  }
+  
+  h2 {
+    font-size: 2em;
+    font-family: $title-font;
+    font-weight: 700;
+    line-height: 1.33333;
+    margin-bottom: 1em;
+    color: $dark;
+
+    @media (min-width: 1114px) {
+      font-size: 60px;
+      line-height: 1.86666;
+      margin-bottom: 9px;
+    }
+  }
+  
+  &__rating {
+    font-family: 'icomoon';
+    color: #FE8D4D;
+    font-size: 28px;
+
+    @media (min-width: 1114px) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 985px;
+    padding: 0 2.5em;
+    margin-bottom: 2em;
+  }
+
+  &__content span {
+    position: absolute;
+    font-family: 'icomoon';
+    font-size: 20px;
+
+    @media (min-width: 1114px) {
+      font-size: 58px;
+    }
+  }
+
+  &__content .left {
+    left: 0;
+    top: 0;
+    transform: translateX(50%);
+
+    @media (min-width: 1114px) {
+      transform: translate(-50%, -100%);
+    }
+  }
+  
+  &__content .right {
+    right: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    @media (min-width: 1114px) {
+      transform: translate(50%, 50%);
+    }
+  }
+
+  &__auth {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 157px;
+    justify-content: center;
+  }
+
+  &__auth-name {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.85714;
+    color: $darkGrey;
+  }
+
+  &__auth-source {
+    font-size: 16px;
+    line-height: 1.375;
+    color: #3D3D3D;
+    margin-bottom: 2em;
+  }
+
+  &__btn {
+    font-family: 'icomoon';
+    font-size: 30px;
+    color: $darkBlue;
+    transition: color .3s ease;
+    
+    &:hover {
+      color: $dark;
+    }
+
+    & + .reviews__btn {
+      margin-left: 20px;
+    }
+  }
+}

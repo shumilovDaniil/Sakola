@@ -1,0 +1,46 @@
+@import "_reset";
+@import "_global";
+@import "_vars";
+@import "_fonts";
+
+.partners {
+  text-align: center;
+  padding-bottom: 2em;
+
+  ul {
+
+    @media (min-width: 567px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  li {
+    margin-bottom: 2em;
+
+    @media (min-width: 567px) {
+      width: 40%;
+    }
+    
+    @media (min-width: 767px) {
+      width: 30%;
+    }
+
+    @media (min-width: 1014px) {
+      width: 20%;
+    }
+  }
+  
+  h3 {
+    margin-bottom: 2em;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1;
+    color: #363848;
+  }
+
+}

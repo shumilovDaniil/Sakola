@@ -1,0 +1,122 @@
+@import "_reset";
+@import "_global";
+@import "_vars";
+@import "_fonts";
+
+.academ-about {
+
+  &__inner {
+    
+    @media (min-width: 1242px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    max-width: 531px;
+    margin: 0 auto;
+    
+    @media (min-width: 1242px) {
+      margin: 0;
+      padding-right: 30px;
+    }
+  }
+
+  strong {
+    display: block;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: $darkBlue;
+    font-family: 'Open Sans';
+    
+    @media (min-width: 740px) {
+      margin-bottom: 17px;
+      font-size: 24px;
+    }
+  }
+
+  h3 {
+    font-size: 2em;
+    font-family: $title-font;
+    font-weight: 700;
+    line-height: 1.33333;
+    margin-bottom: .5em;
+
+    @media (min-width: 740px) {
+      margin: 0 auto 8px;
+      font-size: 60px;
+    }
+  }
+
+  p {
+    margin-bottom: 35px;
+  }
+
+  ul {
+    margin-bottom: 1em;
+    max-width: 482px;
+  }
+
+  li {
+    position: relative;
+    font-weight: 600;
+    line-height: 1.77777;
+    color: $dark;
+    border-bottom: 1px solid $greySoft;
+    margin: 0 0 15px 40px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: transparent url(../img/icons/check.svg) no-repeat 50% 50%/contain;
+      height: 24px;
+      width: 24px;
+      top: 0;
+      left: -40px;
+    }
+  }
+
+  &__img {
+    
+    @media (min-width: 462px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: 880px) {
+      width: 60%;
+    }
+    
+    @media (min-width: 1242px) {
+      align-items: center;
+      position: relative;
+      max-width: 908px;
+      justify-content: flex-end;
+    }
+  }
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    
+    &:first-child {
+      @media (min-width: 1242px) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(0, -30%);
+      }
+    }
+    
+    @media (min-width: 1242px) {
+      width: auto;
+      max-width: 728px;
+      min-width: 296px;
+    }
+  }
+}

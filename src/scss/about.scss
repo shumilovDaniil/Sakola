@@ -1,0 +1,102 @@
+@import "_reset";
+@import "_global";
+@import "_vars";
+@import "_fonts";
+
+@import "__header";
+@import "__first";
+@import "__feedback";
+@import "__footer";
+@import "__quote";
+@import "__choose";
+@import "__mission";
+@import "__gallery";
+@import "__teachers";
+@import "__achievements";
+@import "__location";
+
+
+.header,
+.main {
+  color: $greySoft;
+  background: #2E2E36;
+}
+
+.header {
+  
+  @media (min-width: 629px) {
+    padding: 32px 0 100px;
+  }
+}
+
+.quote {
+
+  &__inner {
+
+    @media (min-width: 1354px) {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+    }
+  }
+  
+  &__left {
+    
+    @media (min-width: 1354px) {
+      text-align: left;
+      max-width: 805px;
+    }
+  }
+
+  &__right img {
+    max-width: 100%;
+  }
+
+  .auth__inner {
+  margin-bottom: 2em;
+
+    @media (min-width: 1354px) {
+      margin: 0 auto 0 0;
+    }
+  }
+}
+
+.choose {
+  color: $greySoft;
+  background: $darkBlue;
+  
+  &__item {
+    background: $darkBlue;
+    border: 1px solid $blue;
+    border-radius: 8px;
+  
+    &:nth-child(even) {
+      background: $blue;
+    }
+  }
+}
+
+.teachers {
+
+  &__item {
+
+    @media (min-width: 920px) {
+      flex: 0 0 23%;
+    } 
+
+    @media (min-width: 1346px) {
+      flex: 0 0 20%;
+    } 
+  }
+}
+
+.achievements {
+  margin-bottom: 1em;
+}
+
+.vision {
+  img {
+    max-width: 922px;
+  }
+}
