@@ -1,14 +1,14 @@
 added:
 
-HTML
+HTML:
 academics.html
 contact.html
 
-SCSS
+SCSS:
 academics.scss
 contact.scss
 __academ-about.scss
 __form.scss
 
-DOCX
+DOCX:
 questions for you :)
