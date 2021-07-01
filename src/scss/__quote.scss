@@ -8,7 +8,7 @@
   &__inner {
     padding: 2em 0;
     
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       margin: 0 auto;
       max-width: 752px;
       padding: 110px 0;
@@ -24,7 +24,7 @@
     color: $darkBlue;
     font-family: 'Open Sans';
     
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       margin-bottom: 17px;
       font-size: 24px;
     }
@@ -37,7 +37,7 @@
     line-height: 1.33333;
     margin-bottom: 1em;
 
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       font-size: 60px;
       margin-bottom: 36px;
     }
@@ -46,14 +46,14 @@
   p {
     margin-bottom: 1em;
 
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       margin-bottom: 104px;
     }
   }
 
   .auth {
 
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -62,21 +62,21 @@
 
   .auth__inner {
 
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       transform: translateX(10%);
     }
   }
   
   .auth__sign {
     
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       margin-bottom: 24px;
     }
   }
 
   img {
     
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       object-fit: contain;
     }
   }

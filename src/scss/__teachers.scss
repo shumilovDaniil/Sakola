@@ -6,10 +6,6 @@
     text-align: center;
     margin: 0 auto;
     color: $darkGrey;
-
-    @media (min-width: 1330px) {
-      padding: 0;
-    } 
   }
 
   h2 {
@@ -20,7 +16,7 @@
     margin-bottom: 1em;
     color: $dark;
 
-    @media (min-width: 1330px) {
+    @media (min-width: 1200px) {
       font-size: 58px;
       margin-bottom: 13px;
     } 
@@ -35,7 +31,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    @media (min-width: 564px) {
+    @media (min-width: 480px) {
       justify-content: space-evenly;
     } 
   }
@@ -60,15 +56,15 @@
       color: $white;
     }
 
-    @media (min-width: 564px) {
+    @media (min-width: 480px) {
       max-width: 40%;
     } 
 
-    @media (min-width: 826px) {
+    @media (min-width: 768px) {
       max-width: 28%;
     } 
     
-    @media (min-width: 1330px) {
+    @media (min-width: 1200px) {
       max-width: 18%;
       margin-bottom: 40px;
     } 
@@ -82,7 +78,7 @@
     font-size: 1em;
     line-height: 1.33333;
 
-    @media (min-width: 1330px) {
+    @media (min-width: 1200px) {
       padding: 12px 0 37px;
       font-size: 24px;
     } 

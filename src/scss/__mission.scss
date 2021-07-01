@@ -3,72 +3,32 @@
   &__inner {
     padding: 2em 0; 
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     margin: 0 auto;
 
-    @media (min-width: 1561px) {
-      padding: 100px 0;
-    }
 
-    @media (min-width: 1506px) {
-      justify-content: space-between;
-    }
   }
   
   &__left {
-    order: 2;
 
-    @media (min-width: 982px) {
-      order: 0;
-      width: 60%;
-      margin: auto 0;
-    }
   }
   
   img {
     display: inline-block;
     width: 100%;
-
-    @media (min-width: 420px) {
-      width: 100%;
-      max-width: 311px;
-      min-width: 116px;
-    }
-
-    @media (min-width: 818px) {
-      width: auto;
-    }
-    
-    @media (min-width: 1206px) {
-      width: 50%; 
-      margin: 20px;
-    }
-
-    @media (min-width: 1507px) {
-      width: auto;
-      max-width: 611px;
-      min-width: 316px;
-    }
   }
   
   &__right {
     
-    @media (min-width: 982px) {
-      order: 0;
-      max-width: 40%;
-    }
   }
   
   &__content {
     max-width: 476px;
     margin: 0 auto;
 
-    @media (min-width: 1206px) {
-      text-align: left;
-      margin: 0;
-    }
   }
   
   h2 {
@@ -78,10 +38,6 @@
     line-height: 1.33333;
     margin-bottom: 1em;
 
-    @media (min-width: 1206px) {
-      font-size: 60px;
-      margin-bottom: 17px;
-    }
   }
   
   p {
@@ -94,10 +50,6 @@
     counter-increment: number;
     text-align: center;
     margin-bottom: 2em;
-
-    @media (min-width: 1206px) {
-      text-align: left;
-    }
     
     &::after {
       content: counter(number);
@@ -118,14 +70,6 @@
       font-size: 1em;
       line-height: 1.33333;
       color: $darkBlue;
-      
-      @media (min-width: 1206px) {
-        transform: translateX(-5%);
-        font-size: 36px;
-        left: 0;
-        height: 84px;
-        width: 84px;
-      }
     }
   }
 
@@ -134,11 +78,6 @@
     margin-top: 1em;
     max-width: 478px;
     margin: 0 auto;
-
-    @media (min-width: 1206px) {
-      padding: 0;
-      margin-left: 110px;
-    }
   }
 
   h5 {

@@ -5,7 +5,7 @@
   padding: 2em 0;
   line-height: 1.875;
 
-  @media (min-width: 1643px) {
+  @media (min-width: 1440px) {
     padding: 100px 0 20px;
   }
 
@@ -15,9 +15,13 @@
     justify-content: space-evenly;
     margin-bottom: 2em;
 
-    @media (min-width: 1643px) {
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+
+    @media (min-width: 1024px) {
       justify-content: space-between;
-      margin-bottom: 30p;
+      margin-bottom: 30px;
     }
   }
   
@@ -26,24 +30,25 @@
     margin-bottom: 1em;
     padding-right: 20px;
     
-    li {
-      
-      @media (min-width: 1643px) {
-        margin-bottom: 14px; 
-      }
-    }
-
-    @media (min-width: 730px) {
+    @media (min-width: 480px) {
       width: 33.3333%;
     }
     
-    @media (min-width: 1120px) {
+    @media (min-width: 768px) {
+      width: 25%;
+    }
+    
+    @media (min-width: 1024px) {
       width: 11.66666%;
     }
     
     li {
       transition: color .3s ease;
       
+      @media (min-width: 1440px) {
+        margin-bottom: 14px; 
+      }
+
       &:hover {
         color: $blue;
       }
@@ -62,20 +67,19 @@
     color: $greySoft;
     margin-bottom: 1em;
     
-    @media (min-width: 1643px) {
+    @media (min-width: 1440px) {
       font-size: 20px;
     }
   }
   
   &__content {
     
-    @media (min-width: 755px) {
+    @media (min-width: 768px) {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
     
-    @media (min-width: 1643px) {
-      justify-content: space-between;
+    @media (min-width: 1440px) {
       padding-bottom: 50px;
     }
   }
@@ -86,11 +90,11 @@
       margin-bottom: 42px;
     }
     
-    @media (min-width: 755px) {
+    @media (min-width: 768px) {
       max-width: 40%;
     }
 
-    @media (min-width: 1643px) {
+    @media (min-width: 1440px) {
       max-width: 803px;
     }
   }
@@ -112,12 +116,12 @@
     a {
       margin-top: 1em;
 
-      @media (min-width: 1643px) {
+      @media (min-width: 1440px) {
         margin: 0;
       }
     }
 
-    @media (min-width: 1643px) {
+    @media (min-width: 1440px) {
       flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
@@ -128,11 +132,11 @@
   &__social {
     font-family: 'icomoon';
 
-    @media (min-width: 755px) {
+    @media (min-width: 768px) {
       width: 50%;
     }
 
-    @media (min-width: 1643px) {
+    @media (min-width: 1440px) {
       max-width: 490px;
     }
   }
@@ -148,7 +152,7 @@
     max-width: 493px;
     font-size: 24px;
 
-    @media (min-width: 1643px) {
+    @media (min-width: 1440px) {
       max-width: 344px;
     }
     
@@ -162,13 +166,14 @@
   }
 
   &__download {
+    max-width: 231px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 2em;
     
-    @media (min-width: 962px) {
-      margin: 0;
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
       max-width: 493px;
       justify-content: space-between;
     }
@@ -176,10 +181,11 @@
   
   &__download-btn {
     position: relative;
-    padding: 11px 48px 16px 76px;
+    padding: 11px 45px 16px 76px;
     border-radius: 6px;
     background: #171B2C;
     font-size: 14px;
+    min-width: 231px;
     line-height: 1.71428;
     color: $greySoft;
     font-family: 'Lato';
@@ -209,7 +215,7 @@
     position: relative;
     margin-bottom: 1em;
 
-    @media (min-width: 501px) {
+    @media (min-width: 1024px) {
       margin: 0;
     }
 
@@ -239,19 +245,19 @@
     border-top: 1px solid rgba(243, 243, 243, .08);;
     padding-top: 25px;
 
-    @media (min-width: 755px) {
+    @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
     }
 
-    @media (min-width: 1643px) {
+    @media (min-width: 1440px) {
       font-size: 16px;
     }
     
     p {
       margin-bottom: 1em;
 
-      @media (min-width: 755px) {
+      @media (min-width: 768px) {
         margin: 0;
       }
     }
@@ -262,7 +268,7 @@
 
     ul {
 
-      @media (min-width: 755px) {
+      @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
       }
@@ -271,7 +277,7 @@
     li {
       margin-bottom: 1em;
 
-      @media (min-width: 755px) {
+      @media (min-width: 768px) {
         margin: 0 0 0 1em;
       }
     }

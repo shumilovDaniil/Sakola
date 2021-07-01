@@ -3,7 +3,7 @@
   
   &__inner {
     
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       padding-bottom: 112px;
       border-bottom: 1px solid rgba(235, 236, 240, .17);;
     }
@@ -11,11 +11,11 @@
   
   &__left {
 
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       max-width: 560px;
     }
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       margin-left: 68px;
     }
   }
@@ -27,7 +27,7 @@
     line-height: 1.35294;
     text-transform: uppercase;
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       display: inline-block;
       font-size: 16px;
       padding-bottom: 13px;
@@ -42,11 +42,11 @@
     color: $greySoft;
     margin-bottom: 1em;
 
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       font-size: 3em;
     }
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       font-weight: 700;
       font-size: 55px;
       line-height: 60px;
@@ -58,7 +58,7 @@
   p {
     margin-bottom: 2em;
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       margin-bottom: 55px;
     }
   }
@@ -93,13 +93,13 @@
     padding: 4em 0 2em 0;
     text-align: center;
     
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       padding: 40p 0 40px 102px;
       justify-content: space-between;
     }
@@ -108,11 +108,11 @@
   &__item {
     margin-bottom: 2em;
     
-    @media (min-width: 740px) {
+    @media (min-width: 768px) {
       flex: 0 0 45%;
     }
     
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       display: flex;
       text-align: left;
       flex: 0 0 27.333%;
@@ -123,7 +123,7 @@
   img {
     width: 3em;
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       margin-right: 31px;
       max-height: 78px;
       width: auto;
@@ -137,7 +137,7 @@
     line-height: 1.875;
     color: $greySoft;
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1200px) {
       line-height: 1.275;
       margin-bottom: 12px;
     }
@@ -155,21 +155,25 @@
   text-align: center;
   font-size: 16px;
 
+  @media (min-width: 1440px) {
+    text-align: left;
+  }
+
   &__inner {
     padding: 2em 0;
 
-    @media (min-width: 1620px) {
-      padding: 80px 0 83px;
+    @media (min-width: 1440px) {
       display: flex;
+      justify-content: space-between;
     }
   }
 
   &__side {
     margin-bottom: 2em;
 
-    @media (min-width: 1620px) {
-      margin: auto 32px auto 0;
-      text-align: left;
+    @media (min-width: 1440px) {
+      flex: 0 0 14%;
+      margin: auto 0;
     }
   }
 
@@ -180,7 +184,7 @@
     line-height: 1.875;
     margin-bottom: 10px;
 
-    @media (min-width: 1372px) {
+    @media (min-width: 1200px) {
       font-size: 24px;
     }
   }
@@ -200,40 +204,41 @@
   }
 
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    @media (min-width: 740px) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    @media (min-width: 1620px) {
-      transform: translate(10.6%, -12%);
-      position: absolute;
-      right: 0;
+    @media (min-width: 1440px) {
+      flex: 0 0 86%;
     }
   }
 
   &__item {
-    max-width: 288px;
-    margin: 0 auto 2em auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 340px;
+    margin: 0 auto 1em auto;
 
-    @media (min-width: 740px) {
-      flex: 0 0 50%;
+    @media (min-width: 1440px) {
+      flex-direction: row;
+      max-width: 400px;
+      margin: 0;
     }
+  }
 
-    @media (min-width: 1372px) {
+  &__item-content {
+
+    @media (min-width: 1440px) {
       display: flex;
-      max-width: 450px;
-      text-align: left;
-    }
-
-    @media (min-width: 1620px) {
-      margin: 0 88px 0 0;
+      flex-direction: column;
+      justify-content: flex-start;
     }
   }
 
   p {
     color: $grey;
+    margin-bottom: 0;
   }
 
   h4 {
@@ -250,12 +255,12 @@
   }
 
   &__item-circle {
-    margin: 0 auto 1em auto ;
-    background: $yellow;
-    width: 80px;
-    height: 80px;
     display: flex;
     justify-content: center;
+    margin: 0 auto 1em auto ;
+    background: $yellow;
+    min-width: 80px;
+    height: 80px;
     font-weight: 700;
     align-items: center;
     border-radius: 50%;
@@ -264,13 +269,10 @@
     font-family: $title-font;
     text-align: center;
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       min-width: 108px;
       height: 108px;
-    }
-
-    @media (min-width: 1372px) {
-      margin-right: 32px;
+      margin-right: 1em;
     }
   
     span {
