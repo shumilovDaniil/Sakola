@@ -1200,6 +1200,13 @@ img {
   margin: 0 10px 10px 0;
 }
 
+@media (min-width: 320px) {
+  .gallery__img {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .gallery img {
   height: 150px;
   width: 100%;

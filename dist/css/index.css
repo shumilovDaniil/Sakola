@@ -247,10 +247,6 @@ img {
   }
 }
 
-.slider__left {
-  max-width: 340px;
-}
-
 @media (min-width: 740px) {
   .slider__left {
     max-width: 560px;
@@ -315,6 +311,7 @@ img {
 }
 
 .slider a {
+  display: inline-block;
   padding: 13px 55px;
   background: #023AA2;
   font-family: "Cairo", sans-serif;
@@ -1296,6 +1293,13 @@ img {
 
 .gallery__img {
   margin: 0 10px 10px 0;
+}
+
+@media (min-width: 320px) {
+  .gallery__img {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .gallery img {

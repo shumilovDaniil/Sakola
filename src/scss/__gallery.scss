@@ -46,12 +46,21 @@
 
   &__img {
     margin: 0 10px 10px 0;
+
+    @media (min-width: 320px) {
+      margin: 0;
+      width: 100%;
+    }
   }
   
   img {
     height: 150px;
     width: 100%;
     object-fit: cover;
+    
+    @media (min-width: 640px) {
+      // height: auto;
+    }
     
     @media (min-width: 986px) {
       height: 200px;  
