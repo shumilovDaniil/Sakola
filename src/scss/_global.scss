@@ -2,7 +2,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: $text-font;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -30,11 +30,11 @@ img {
 
 .logo {
   font-size: 2em;
-  font-family: $logo-font;
+  font-family: $moderno;
   transition: color .3s ease;
   color: $white;
   
-  @media (min-width: 1240px) {
+  @media (min-width: $xl) {
     font-size: 39px;
   }
 
@@ -46,7 +46,7 @@ img {
   img {
     margin-right: .3em;
   
-    @media (min-width: 1240px) {
+    @media (min-width: $xl) {
       margin-right: 17px;
     }
   }

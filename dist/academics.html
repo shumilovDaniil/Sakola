@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/academics.css">
+  <link rel="stylesheet" href="../css/fonts.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Cairo:wght@300;400;600;700;900&family=Lato:wght@400;900&family=MuseoModerno:wght@700&family=Open+Sans&family=Poppins:wght@600&display=swap"
@@ -19,14 +20,14 @@
     <div class="container">
       <div class="header__inner">
         <strong class="header__logo logo">
-          <a href="#">
+          <a href="./index.html">
             <img src="./img/icons/logo.png" alt="Logotype">Sakola
           </a>
         </strong>
         <nav>
           <ul class="header__list">
             <li class="header__list-item">
-              <a class="header__list-link" href="#">About</a>
+              <a class="header__list-link" href="./about.html">About</a>
             </li>
             <li class="header__list-item">
               <a class="header__list-link" href="#">Admission</a>
@@ -193,16 +194,28 @@
   <section class="location">
     <div class="container">
       <h3>Our Location</h3>
-      <div class="location__map"></div>
+      <div class="location__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A305fd8251f19f73775f4551d5cd42b52d8b13ca3b9f47d5dc8f85f16f4f736de&amp;source=constructor"
+          width="100%" height="460" frameborder="0">
+        </iframe>
+      </div>
       <div class="location__address">
         <address class="location__item">
-          <img src="./img/icons/loc-icon1.svg" alt="Image description">832 Thompson Drive, San Fransisco<br>CA 94107,
-          United States
+          <div class="location__icon">
+            <img src="./img/icons/loc-icon1.svg" alt="Image description">
+          </div>832 Thompson Drive, San Fransisco<br>CA 94107, United States
         </address>
         <a class="location__item" href="tel:123345123556">
-          <img src="./img/icons/loc-icon2.svg" alt="Image description">+123 345123 556</a>
+          <div class="location__icon">
+            <img src="./img/icons/loc-icon2.svg" alt="Image description">
+          </div>+123 345123 556
+        </a>
         <a class="location__item" href="mailto:support@sakolah.id">
-          <img src="./img/icons/loc-icon3.svg" alt="Image description">support@sakolah.id</a>
+          <div class="location__icon">
+            <img src="./img/icons/loc-icon3.svg" alt="Image description">
+          </div>support@sakolah.id
+        </a>
       </div>
     </div>
   </section>

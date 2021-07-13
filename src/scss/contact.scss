@@ -1,7 +1,6 @@
 @import "_reset";
 @import "_global";
 @import "_vars";
-@import "_fonts";
 
 @import "__header";
 @import "__form";
@@ -45,6 +44,7 @@
 .location {
   &__address {
     transform: translateY(50%);
+    justify-content: space-evenly;
   }
 
   h3 {

@@ -1,8 +1,3 @@
-@import "_reset";
-@import "_global";
-@import "_vars";
-@import "_fonts";
-
 .form {
   background: $dark;
   color: $white;
@@ -10,7 +5,7 @@
   text-align: center;
   margin-bottom: 10em;
 
-  @media (min-width: 920px) {
+  @media (min-width: $lg) {
     font-size: 16px;
     padding: 97px 0 0 0;
     margin-bottom: 230px;
@@ -23,14 +18,14 @@
   }
   
   legend {
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 2em;
     line-height: 1.33333;
     margin-bottom: .5em;
     color: $white;
     
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       font-size: 80px;
       margin-bottom: 16px;
     }  
@@ -43,7 +38,7 @@
   }
 
   &__inner {
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
@@ -53,7 +48,7 @@
   }
   
   &__item {
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       flex: 0 0 465px;
     }  
   }
@@ -64,7 +59,7 @@
       border-bottom: 2px solid $blue;
     }
     
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       flex: 0 0 100%;
     }
   }
@@ -76,7 +71,7 @@
     width: 70%;
     margin: 0 auto;
 
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       width: 100%;
     }
   }
@@ -89,7 +84,7 @@
   &__input {
     margin-bottom: 2em;
     padding: 1em .5em;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 600;
     line-height: 1.33333;
     color: $white;
@@ -97,14 +92,14 @@
     border-color:  solid $greySoft;
     border-width: 0 0 1px 0;
 
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       font-size: 18px;
     }
   }
   
   &__send {
     
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -126,13 +121,13 @@
       font-weight: 700;
     }
     
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       font-size: 16px;
     }
   }
 
   button {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     font-weight: 700;
     line-height: 1.38888;
@@ -145,7 +140,7 @@
     cursor: pointer;
     transition: background-color .3s ease, color .3s ease;
 
-    @media (min-width: 920px) {
+    @media (min-width: $lg) {
       margin: 0;
       padding: 22px 100px;
       font-size: 18px;

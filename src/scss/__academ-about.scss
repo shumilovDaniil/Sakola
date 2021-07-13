@@ -1,13 +1,7 @@
-@import "_reset";
-@import "_global";
-@import "_vars";
-@import "_fonts";
-
 .academ-about {
-
   &__inner {
     
-    @media (min-width: 1242px) {
+    @media (min-width: $xl) {
       display: flex;
       justify-content: space-between;
     }
@@ -17,7 +11,7 @@
     max-width: 531px;
     margin: 0 auto;
     
-    @media (min-width: 1242px) {
+    @media (min-width: $xl) {
       margin: 0;
       padding-right: 30px;
     }
@@ -32,7 +26,7 @@
     color: $darkBlue;
     font-family: 'Open Sans';
     
-    @media (min-width: 740px) {
+    @media (min-width: $md) {
       margin-bottom: 17px;
       font-size: 24px;
     }
@@ -40,12 +34,12 @@
 
   h3 {
     font-size: 2em;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     line-height: 1.33333;
     margin-bottom: .5em;
 
-    @media (min-width: 740px) {
+    @media (min-width: $md) {
       margin: 0 auto 8px;
       font-size: 60px;
     }
@@ -81,17 +75,17 @@
 
   &__img {
     
-    @media (min-width: 462px) {
+    @media (min-width: $sm) {
       display: flex;
       justify-content: center;
       margin: 0 auto;
     }
     
-    @media (min-width: 880px) {
+    @media (min-width: $md) {
       width: 60%;
     }
     
-    @media (min-width: 1242px) {
+    @media (min-width: $xl) {
       align-items: center;
       position: relative;
       max-width: 908px;
@@ -105,7 +99,7 @@
     display: inline-block;
     
     &:first-child {
-      @media (min-width: 1242px) {
+      @media (min-width: $xl) {
         position: absolute;
         left: 0;
         bottom: 0;
@@ -113,7 +107,7 @@
       }
     }
     
-    @media (min-width: 1242px) {
+    @media (min-width: $xl) {
       width: auto;
       max-width: 728px;
       min-width: 296px;

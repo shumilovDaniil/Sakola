@@ -9,7 +9,7 @@
     border-bottom: 1px solid $greySoft;
     padding: 2em 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -22,14 +22,14 @@
     & + .achievements__item {
       margin-top: 2em;
 
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         margin: 0;
       }
     }
   }
 
   strong {
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 3em;
     line-height: 1;
@@ -37,7 +37,7 @@
     display: inline-block;
     color: $dark;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       font-size: 60px;
     }
   }

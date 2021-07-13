@@ -1,7 +1,6 @@
 @import "_reset";
 @import "_global";
 @import "_vars";
-@import "_fonts";
 
 @import "__header";
 @import "__first";
@@ -13,5 +12,13 @@
 .header, .main {
   color: $greySoft;
   background: $darkBlue;
+
+  a {
+    transition: color .3s ease;
+    
+    &:hover {
+      color: $grey;
+    }
+  }
 }
 

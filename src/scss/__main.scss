@@ -3,7 +3,7 @@
   
   &__inner {
     
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       padding-bottom: 112px;
       border-bottom: 1px solid rgba(235, 236, 240, .17);;
     }
@@ -11,11 +11,11 @@
   
   &__left {
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       max-width: 560px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       margin-left: 68px;
     }
   }
@@ -27,7 +27,7 @@
     line-height: 1.35294;
     text-transform: uppercase;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       display: inline-block;
       font-size: 16px;
       padding-bottom: 13px;
@@ -35,18 +35,18 @@
   }
 
   h1 {
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 2em;
     line-height: 1.09090;
     color: $greySoft;
     margin-bottom: 1em;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       font-size: 3em;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       font-weight: 700;
       font-size: 55px;
       line-height: 60px;
@@ -58,7 +58,7 @@
   p {
     margin-bottom: 2em;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       margin-bottom: 55px;
     }
   }
@@ -67,7 +67,7 @@
     display: inline-block;
     padding: 13px 55px;
     background: $darkBlue;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 1em;
     line-height: 1.88888;
@@ -75,7 +75,7 @@
     border-radius: 6px;
     transition: color .3s ease, background-color .3s ease;
 
-    @media (min-width: 1240px) {
+    @media (min-width: $xl) {
       font-size: 18px;
     }
 
@@ -93,14 +93,14 @@
     padding: 4em 0 2em 0;
     text-align: center;
     
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    @media (min-width: 1200px) {
-      padding: 40p 0 40px 102px;
+    @media (min-width: $xl) {
+      padding: 40px 0 40px 102px;
       justify-content: space-between;
     }
   }
@@ -108,11 +108,11 @@
   &__item {
     margin-bottom: 2em;
     
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       flex: 0 0 45%;
     }
     
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       display: flex;
       text-align: left;
       flex: 0 0 27.333%;
@@ -123,7 +123,7 @@
   img {
     width: 3em;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       margin-right: 31px;
       max-height: 78px;
       width: auto;
@@ -131,13 +131,13 @@
   }
 
   h2 {
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 1.5em;
     line-height: 1.875;
     color: $greySoft;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       line-height: 1.275;
       margin-bottom: 12px;
     }
@@ -155,14 +155,14 @@
   text-align: center;
   font-size: 16px;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xxl) {
     text-align: left;
   }
 
   &__inner {
     padding: 2em 0;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       display: flex;
       justify-content: space-between;
     }
@@ -171,20 +171,20 @@
   &__side {
     margin-bottom: 2em;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       flex: 0 0 14%;
       margin: auto 0;
     }
   }
 
   h3 {
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 2em;
     line-height: 1.875;
     margin-bottom: 10px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       font-size: 24px;
     }
   }
@@ -208,7 +208,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       flex: 0 0 86%;
     }
   }
@@ -220,7 +220,7 @@
     max-width: 340px;
     margin: 0 auto 1em auto;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       flex-direction: row;
       max-width: 400px;
       margin: 0;
@@ -229,7 +229,7 @@
 
   &__item-content {
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -242,7 +242,7 @@
   }
 
   h4 {
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -266,10 +266,10 @@
     border-radius: 50%;
     color: #000; 
     line-height: 1;
-    font-family: $title-font;
+    font-family: $primary-font;
     text-align: center;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       min-width: 108px;
       height: 108px;
       margin-right: 1em;

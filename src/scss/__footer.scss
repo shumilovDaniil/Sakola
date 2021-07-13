@@ -1,11 +1,11 @@
 .footer {
-  font-family: $title-font;
+  font-family: $primary-font;
   background: $dark;
   color: $grey;
-  padding: 2em 0;
+  padding-top: 2em;
   line-height: 1.875;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xxl) {
     padding: 100px 0 20px;
   }
 
@@ -15,11 +15,11 @@
     justify-content: space-evenly;
     margin-bottom: 2em;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       justify-content: center;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $lg) {
       justify-content: space-between;
       margin-bottom: 30px;
     }
@@ -30,22 +30,22 @@
     margin-bottom: 1em;
     padding-right: 20px;
     
-    @media (min-width: 480px) {
+    @media (min-width: $sm) {
       width: 33.3333%;
     }
     
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       width: 25%;
     }
     
-    @media (min-width: 1024px) {
+    @media (min-width: $lg) {
       width: 11.66666%;
     }
     
     li {
       transition: color .3s ease;
       
-      @media (min-width: 1440px) {
+      @media (min-width: $xxl) {
         margin-bottom: 14px; 
       }
 
@@ -67,19 +67,19 @@
     color: $greySoft;
     margin-bottom: 1em;
     
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       font-size: 20px;
     }
   }
   
   &__content {
     
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       display: flex;
       justify-content: space-between;
     }
     
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       padding-bottom: 50px;
     }
   }
@@ -90,11 +90,11 @@
       margin-bottom: 42px;
     }
     
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       max-width: 40%;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       max-width: 803px;
     }
   }
@@ -116,12 +116,12 @@
     a {
       margin-top: 1em;
 
-      @media (min-width: 1440px) {
+      @media (min-width: $xxl) {
         margin: 0;
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
@@ -130,29 +130,30 @@
   }
 
   &__social {
-    font-family: 'icomoon';
-
-    @media (min-width: 768px) {
+    
+    @media (min-width: $md) {
       width: 50%;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       max-width: 490px;
     }
   }
-
+  
   h5 {
     margin-bottom: 1em;
+    
   }
-
+  
   &__social-list {
+    font-family: 'icomoon';
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
     max-width: 493px;
     font-size: 24px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       max-width: 344px;
     }
     
@@ -166,13 +167,17 @@
   }
 
   &__download {
-    max-width: 231px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 2em;
     
-    @media (min-width: 1024px) {
+    @media (min-width: $sm) {
+      max-width: 231px;
+    }
+
+    @media (min-width: $lg) {
       margin-bottom: 0;
       max-width: 493px;
       justify-content: space-between;
@@ -185,11 +190,16 @@
     border-radius: 6px;
     background: #171B2C;
     font-size: 14px;
-    min-width: 231px;
+    width: 100%;
+    text-align: center;
     line-height: 1.71428;
     color: $greySoft;
     font-family: 'Lato';
     transition: background-color .3s ease;
+
+    @media (min-width: $sm) {
+      max-width: 231px;
+    }
     
     span {
       margin-top: 1px;
@@ -206,7 +216,7 @@
     &::after {
       position: absolute;
       content: '';
-      left: 0;
+      left: 30%;
       top: 0;
     }
   }
@@ -215,15 +225,15 @@
     position: relative;
     margin-bottom: 1em;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $lg) {
       margin: 0;
     }
 
     &::after {
       height: 38px;
       width: 30px;
-      background: no-repeat center url(../images/icons/appstore.svg);
-      transform: translate(80%, 40%);
+      background: no-repeat center url(../img/icons/appstore.svg);
+      transform: translate(-130%, 40%);
     }
   }
   
@@ -232,8 +242,8 @@
     &::after {
       height: 32px;
       width: 26px;
-      background: no-repeat center url(../images/icons/googleplay.svg);
-      transform: translate(110%, 70%);
+      background: no-repeat center url(../img/icons/googleplay.svg);
+      transform: translate(-140%, 70%);
     }
   }
 
@@ -243,32 +253,36 @@
     color: $greySoft;
     font-weight: 600;
     border-top: 1px solid rgba(243, 243, 243, .08);;
-    padding-top: 25px;
+    padding: 25px 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       display: flex;
       justify-content: space-between;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       font-size: 16px;
     }
     
     p {
       margin-bottom: 1em;
 
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         margin: 0;
       }
     }
     
     nav {
       margin-bottom: 1em;
+
+      @media (min-width: $md) {
+        margin: 0; 
+      }
     }
 
     ul {
 
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         display: flex;
         justify-content: space-between;
       }
@@ -277,7 +291,7 @@
     li {
       margin-bottom: 1em;
 
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         margin: 0 0 0 1em;
       }
     }
@@ -292,8 +306,10 @@
       }
     }
 
-    strong span {
-      color: #D93838;
+    strong {
+      span {
+        color: #D93838;
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
   text-align: center;
   padding-bottom: 2em;
   
-  @media (min-width: 1440px) {
+  @media (min-width: $xxl) {
     padding-bottom: 100px;
   } 
   
@@ -11,20 +11,20 @@
     color: $black;
     margin: 0 auto;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       padding: 0;
     }
   }
   
   h2 {
     font-size: 2em;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     line-height: 1.33333;
     margin-bottom: 1em;
     color: $dark;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       font-size: 60px;
       line-height: 1.86666;
       margin-bottom: 9px;
@@ -36,7 +36,7 @@
     color: #FE8D4D;
     font-size: 28px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       margin-bottom: 30px;
     }
   }
@@ -54,7 +54,7 @@
     font-family: 'icomoon';
     font-size: 20px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       font-size: 58px;
     }
   }
@@ -64,7 +64,7 @@
     top: 0;
     transform: translateX(50%);
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       transform: translate(-50%, -100%);
     }
   }
@@ -74,7 +74,7 @@
     bottom: 0;
     transform: translateX(-50%);
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       transform: translate(50%, 50%);
     }
   }
@@ -88,7 +88,7 @@
   }
 
   &__auth-name {
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.85714;

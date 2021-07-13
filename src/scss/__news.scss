@@ -4,7 +4,7 @@
   line-height: 26px;
   color: $dark;
   
-  @media (min-width: 1440px) {
+  @media (min-width: $xxl) {
     padding: 0 0 100px 0;
   }
 
@@ -19,13 +19,13 @@
 
   h2 {
     font-size: 2em;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     line-height: 1.33333;
     margin-bottom: 1em;
     color: $dark;
     
-    @media (min-width: 1024px) {
+    @media (min-width: $lg) {
       font-size: 60px;
       line-height: 1.86666;
       margin-bottom: 0;
@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       justify-content: space-between;
       padding-bottom: 40px;
     }
@@ -50,15 +50,15 @@
     border-radius: 6px;
     transition: box-shadow .3s ease;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       flex: 0 0 45%;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $lg) {
       flex: 0 0 30%;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       margin-bottom: 0;
       padding: 25px 40px 40px 40px;   
     }
@@ -74,7 +74,7 @@
       border-radius: 6px;
       margin-bottom: 1em;
       
-      @media (min-width: 1440px) {
+      @media (min-width: $xxl) {
         margin-bottom: 25px;        
       }
     }
@@ -86,7 +86,7 @@
       color: #000000;
       margin-bottom: 1em;
 
-      @media (min-width: 1440px) {
+      @media (min-width: $xxl) {
         font-size: 26px;
         margin-bottom: 10px;     
       }
@@ -100,7 +100,7 @@
       color: $grey;
       margin-bottom: .5em;
       
-      @media (min-width: 1440px) {
+      @media (min-width: $xxl) {
         font-size: 16px;   
         padding-bottom: 23px;
       }
@@ -116,7 +116,7 @@
       line-height: 1.88888;
       color: $darkBlue;
       
-      @media (min-width: 1440px) {
+      @media (min-width: $xxl) {
         font-size: 18px;   
       }
     }
@@ -127,7 +127,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       justify-content: space-between;
       flex-direction: row;
     }
@@ -162,7 +162,7 @@
     padding: 14px 48px;
     transition: color .3s ease, background-color .3s ease;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xxl) {
       font-size: 20px;
     }
 

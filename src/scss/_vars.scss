@@ -1,11 +1,20 @@
-$title-font: 'Cairo', sans-serif;
-$text-font: 'Open-Sans', sans-serif;
-$font-decor: 'Poppins', sans-serif;
-$logo-font: 'MuseoModerno', sans-serif;
+$primary-font: 'Cairo', sans-serif;
+$secondary-font: 'Open-Sans', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$moderno: 'MuseoModerno', sans-serif;
+
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1440px;
 
 $white: #fff;
 $black: #000;
 $yellow: #FBFF33;
+$orange: #FA814D;
+$pink: #FF4A55;
+$sky: #5DCFFF;
 $dark: #080A12;
 $darkGrey: #363848;
 $hardGrey: #414141;

@@ -10,13 +10,13 @@
 
   h2 {
     font-size: 2em;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     line-height: 1.33333;
     margin-bottom: 1em;
     color: $dark;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       font-size: 58px;
       margin-bottom: 13px;
     } 
@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    @media (min-width: 480px) {
+    @media (min-width: $sm) {
       justify-content: space-evenly;
     } 
   }
@@ -56,15 +56,15 @@
       color: $white;
     }
 
-    @media (min-width: 480px) {
+    @media (min-width: $sm) {
       max-width: 40%;
     } 
 
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       max-width: 28%;
     } 
     
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       max-width: 18%;
       margin-bottom: 40px;
     } 
@@ -73,12 +73,12 @@
   &__item-name {
     display: inline-block;
     padding: .3em 0 1em;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 1em;
     line-height: 1.33333;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl) {
       padding: 12px 0 37px;
       font-size: 24px;
     } 

@@ -1,7 +1,6 @@
 @import "_reset";
 @import "_global";
 @import "_vars";
-@import "_fonts";
 
 @import "__header";
 @import "__first";
@@ -14,10 +13,10 @@
 
 
 .header {
-  background: #fff;
+  background: $white;
   border-bottom: 1px solid $greySoft;
   
-  @media (min-width: 920px) {
+  @media (min-width: $lg) {
     margin-bottom: 200px;
   }
 
@@ -25,7 +24,7 @@
     margin-bottom: 2em;
 
 
-    @media (min-width: 1240px) {
+    @media (min-width: $xl) {
       padding: 32px 0 0;
     }
   }
@@ -44,7 +43,7 @@
   color: $hardGrey;
   padding-bottom: 4em;
 
-  @media (min-width: 920px) {
+  @media (min-width: $lg) {
     padding-bottom: 150px;
   }
 
@@ -61,6 +60,10 @@
     &:hover {
       border: none;
     }
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -72,7 +75,7 @@
 
   margin-bottom: 3em;
 
-  @media (min-width: 920px) {
+  @media (min-width: $lg) {
     margin-bottom: 200px;
   }
 
@@ -80,7 +83,7 @@
 
     .academ-about__img {
 
-      @media (min-width: 1242px) {
+      @media (min-width: $xl) {
         justify-content: flex-start;
       }
     }

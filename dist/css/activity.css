@@ -96,7 +96,7 @@ img {
   color: #fff;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .logo {
     font-size: 39px;
   }
@@ -111,7 +111,7 @@ img {
   margin-right: .3em;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .logo img {
     margin-right: 17px;
   }
@@ -119,20 +119,6 @@ img {
 
 .logo:hover {
   color: #2459A8;
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../../src/fonts/icomoon.eot");
-  src: url("../../src/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/icomoon.woff") format("woff"), url("../../src/fonts/icomoon.ttf") format("truetype"), url("../../src/fonts/icomoon.svg") format("svg");
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .header__inner {
@@ -242,7 +228,7 @@ img {
   padding-bottom: 2em;
 }
 
-@media (min-width: 629px) {
+@media (min-width: 768px) {
   .main {
     font-size: 16px;
     padding-bottom: 211px;
@@ -263,20 +249,21 @@ img {
   color: #EBECF0;
 }
 
-@media (min-width: 629px) {
+@media (min-width: 768px) {
   .main h1 {
     font-size: 80px;
     margin-bottom: 28px;
   }
 }
 
-@media (min-width: 629px) {
+@media (min-width: 768px) {
   .main p {
     margin-bottom: 43px;
   }
 }
 
 .main a {
+  position: relative;
   display: inline-block;
   color: #fff;
   padding: 10px 30px 10px 55px;
@@ -289,7 +276,17 @@ img {
   transition: border .3s ease, background-color .3s ease;
 }
 
-@media (min-width: 629px) {
+.main a::before {
+  position: absolute;
+  content: "\e901";
+  font-family: 'icomoon';
+  font-size: 20px;
+  left: 0;
+  top: 0;
+  transform: translate(160%, 35%);
+}
+
+@media (min-width: 768px) {
   .main a {
     padding: 13px 40px 13px 70px;
   }
@@ -302,6 +299,241 @@ img {
 
 .event-list {
   background: #F9F9F9;
+  color: #363848;
+  padding: 1em 0;
+}
+
+@media (min-width: 1024px) {
+  .event-list {
+    padding: 70px 0 100px;
+  }
+}
+
+.event-list h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.86666;
+  color: #363848;
+}
+
+@media (min-width: 1024px) {
+  .event-list h3 {
+    font-size: 60px;
+  }
+}
+
+.event-list__title {
+  max-width: 550px;
+}
+
+@media (min-width: 1024px) {
+  .event-list p {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 480px) {
+  .event-list__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .event-list__item {
+    flex-direction: row;
+    max-width: none;
+    margin-bottom: 40px;
+  }
+}
+
+.event-list__date {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  margin-bottom: .3em;
+}
+
+@media (min-width: 1024px) {
+  .event-list__date {
+    margin-bottom: 1em;
+    min-width: 142px;
+    max-width: 142px;
+    margin: 0 38px 0 0;
+  }
+}
+
+.event-list__when, .event-list__time {
+  flex: 1 1 50%;
+  padding: .5em 0;
+}
+
+.event-list__when {
+  background: #FA814D;
+  border-radius: 6px 0 0 6px;
+}
+
+@media (min-width: 1024px) {
+  .event-list__when {
+    padding: 20px 0;
+    border-radius: 6px 6px 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .event-list__when strong {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.86111;
+  }
+}
+
+.event-list__time {
+  background: #414141;
+  border-radius: 0 6px 6px 0;
+}
+
+@media (min-width: 1024px) {
+  .event-list__time {
+    border-radius: 0 0 6px 6px;
+    bottom: 0;
+    left: 0;
+    padding: 20px 30px 44px;
+    font-size: 18px;
+  }
+}
+
+.event-list__news {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background: #fff;
+  border-radius: 6px;
+}
+
+@media (min-width: 480px) {
+  .event-list__news {
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .event-list__news {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.event-list__news img {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .event-list__news img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 465px;
+    height: 100%;
+  }
+}
+
+.event-list__content {
+  color: #080A12;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+@media (min-width: 1024px) {
+  .event-list__content {
+    padding: 30px 55px 50px 40px;
+  }
+}
+
+.event-list__content h4 {
+  font-family: "Cairo", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.30769;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 1024px) {
+  .event-list__content h4 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+}
+
+.event-list__content strong {
+  color: #A3ABB6;
+  font-size: .8em;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .event-list__content strong {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+}
+
+.event-list__content p {
+  margin-bottom: .5em;
+}
+
+@media (min-width: 1024px) {
+  .event-list__content p {
+    margin-bottom: 0;
+  }
+}
+
+.event-list__content a {
+  color: #023AA2;
+  font-weight: 700;
+  transition: color .3s ease;
+}
+
+.event-list__content a:hover {
+  color: #080A12;
+}
+
+.event-list__link {
+  display: inline-block;
+  background: #023AA2;
+  color: #fff;
+  padding: 13px 57px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.88888;
+  transition: background-color .3s ease;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .event-list__link {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+.event-list__link:hover {
+  background: #080A12;
 }
 
 .feedback {
@@ -429,7 +661,7 @@ img {
 
 @media (min-width: 480px) {
   .feedback__btn {
-    max-width: 198px;
+    max-width: 40%;
     border-radius: 0 6px 6px 0;
   }
 }
@@ -438,7 +670,7 @@ img {
   font-family: "Cairo", sans-serif;
   background: #080A12;
   color: #A3ABB6;
-  padding: 2em 0;
+  padding-top: 2em;
   line-height: 1.875;
 }
 
@@ -588,10 +820,6 @@ img {
   }
 }
 
-.footer__social {
-  font-family: 'icomoon';
-}
-
 @media (min-width: 768px) {
   .footer__social {
     width: 50%;
@@ -609,6 +837,7 @@ img {
 }
 
 .footer__social-list {
+  font-family: 'icomoon';
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
@@ -631,11 +860,17 @@ img {
 }
 
 .footer__download {
-  max-width: 231px;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 2em;
+}
+
+@media (min-width: 480px) {
+  .footer__download {
+    max-width: 231px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -652,11 +887,18 @@ img {
   border-radius: 6px;
   background: #171B2C;
   font-size: 14px;
-  min-width: 231px;
+  width: 100%;
+  text-align: center;
   line-height: 1.71428;
   color: #EBECF0;
   font-family: 'Lato';
   transition: background-color .3s ease;
+}
+
+@media (min-width: 480px) {
+  .footer__download-btn {
+    max-width: 231px;
+  }
 }
 
 .footer__download-btn span {
@@ -674,7 +916,7 @@ img {
 .footer__download-btn::after {
   position: absolute;
   content: '';
-  left: 0;
+  left: 30%;
   top: 0;
 }
 
@@ -692,15 +934,15 @@ img {
 .footer .btn__app-store::after {
   height: 38px;
   width: 30px;
-  background: no-repeat center url(../images/icons/appstore.svg);
-  transform: translate(80%, 40%);
+  background: no-repeat center url(../img/icons/appstore.svg);
+  transform: translate(-130%, 40%);
 }
 
 .footer .btn__google-play::after {
   height: 32px;
   width: 26px;
-  background: no-repeat center url(../images/icons/googleplay.svg);
-  transform: translate(110%, 70%);
+  background: no-repeat center url(../img/icons/googleplay.svg);
+  transform: translate(-140%, 70%);
 }
 
 .footer__policy {
@@ -709,7 +951,7 @@ img {
   color: #EBECF0;
   font-weight: 600;
   border-top: 1px solid rgba(243, 243, 243, 0.08);
-  padding-top: 25px;
+  padding: 25px 0;
 }
 
 @media (min-width: 768px) {
@@ -737,6 +979,12 @@ img {
 
 .footer__policy nav {
   margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .footer__policy nav {
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -773,4 +1021,12 @@ img {
 .header, .main {
   color: #EBECF0;
   background: #023AA2;
+}
+
+.header a, .main a {
+  transition: color .3s ease;
+}
+
+.header a:hover, .main a:hover {
+  color: #A3ABB6;
 }

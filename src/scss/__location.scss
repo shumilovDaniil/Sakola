@@ -1,15 +1,9 @@
-@import "_reset";
-@import "_global";
-@import "_vars";
-@import "_fonts";
-
 .location {
-
   h3 {
     text-align: center;
     font-weight: 700;
     font-size: 2em;
-    font-family: $title-font;
+    font-family: $primary-font;
     margin-bottom: 1em;
   }
   
@@ -18,36 +12,33 @@
     height: 460px;
     background: #C4C4C4;
     margin-bottom: 2em;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   &__address {
-    margin: 0 auto;
-    width: 80%;
-    padding: 2em;
     text-align: center;
+    margin: 0 auto;
+    padding: 2em;
+    width: 80%;
     background: $white;
     box-shadow: 0 19px 69px rgba(0, 0, 0, .06);
     border-radius: 6px;
     transform: translateY(-50%);
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 600;
     font-size: 1em;
     line-height: 1.875;
     color: $dark;
   
-    @media (min-width: 953px) {
+    @media (min-width: $xl) {
       text-align: left;
       display: flex;
       justify-content: space-between;
       align-items: baseline;
     }
-
-    @media (min-width: 1449px) {
-      font-size: 24px;
-      width: 1348px;
-    }
   }
-
+  
   &__item {
     display: flex;
     flex-direction: column;
@@ -56,29 +47,43 @@
     & + .location__item {
       margin-top: 2em;
 
-      @media (min-width: 953px) {
-        padding-left: 10px;
+      @media (min-width: $xl) {
         margin: 0;
       }
     }
-
-    @media (min-width: 953px) {
+    
+    @media (min-width: $xl) {
       flex-direction: row;
     }
   }
 
-  &__item img {
-    width: 30px;
-    height: 30px;
-
-    @media (min-width: 953px) {
-      margin-right: 10px;
-    }
+  &__link {
+    transition: color .3s ease;
     
-    @media (min-width: 1449px) {
-      width: 65px;
-      height: 65px;
-      margin-right: 24px;
+    &:hover {
+      color: $darkBlue;
+    }
+  }
+  
+  &__icon {
+    height: 65px;
+    width: 65px;
+    background: $blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $xl) {
+      margin-right: 1em;
+    }
+  }
+
+  a {
+    transition: color .3s ease;
+    
+    &:hover {
+      color: $blue;
     }
   }
 }

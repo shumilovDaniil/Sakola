@@ -1,15 +1,10 @@
-@import "_reset";
-@import "_global";
-@import "_vars";
-@import "_fonts";
-
 .partners {
   text-align: center;
   padding-bottom: 2em;
 
   ul {
 
-    @media (min-width: 567px) {
+    @media (min-width: $sm) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -20,22 +15,21 @@
   li {
     margin-bottom: 2em;
 
-    @media (min-width: 567px) {
+    @media (min-width: $sm) {
       width: 40%;
     }
     
-    @media (min-width: 767px) {
+    @media (min-width: $md) {
       width: 30%;
     }
 
-    @media (min-width: 1014px) {
+    @media (min-width: $lg) {
       width: 20%;
     }
   }
   
   h3 {
     margin-bottom: 2em;
-    font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 1.5em;
