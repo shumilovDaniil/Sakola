@@ -1,6 +1,20 @@
 .feedback {
+  position: relative;
   background: $darkBlue;
   color: $white;
+
+  &::before {
+    @media (min-width: $xl) {
+      content: '';
+      position: absolute;
+      background: $white;
+      height: 100%;
+      width: 159px;
+      left: 0;
+      top: 0;
+      opacity: .15;
+    }
+  }
 
   &__inner {
     padding: 2em 0;
@@ -68,6 +82,10 @@
     line-height: 1.38888;
     text-overflow: ellipsis;
     margin-bottom: 1em;
+
+    &::placeholder {
+      color: $greySoft;
+    }
 
     @media (min-width: $sm) {
       width: calc(100% - 198px);

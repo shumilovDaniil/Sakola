@@ -150,10 +150,25 @@
 }
 
 .events {
+  position: relative;
   color: $white;
   background: $darkBlue;
   text-align: center;
   font-size: 16px;
+
+  &::before {
+    @media (min-width: $xxl) {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      background: $white;
+      height: 100%;
+      width: 19%;
+      left: 0;
+      top: 0;
+      opacity: .15;
+    }
+  }
 
   @media (min-width: $xxl) {
     text-align: left;
@@ -170,6 +185,7 @@
 
   &__side {
     margin-bottom: 2em;
+    z-index: 2;
 
     @media (min-width: $xxl) {
       flex: 0 0 14%;

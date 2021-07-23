@@ -173,7 +173,7 @@ img {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
     color: #EBECF0;
   }
 }
@@ -283,7 +283,13 @@ img {
   font-size: 20px;
   left: 0;
   top: 0;
-  transform: translate(160%, 35%);
+  transform: translate(115%, 25%);
+}
+
+@media (min-width: 768px) {
+  .main a::before {
+    transform: translate(160%, 35%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -298,8 +304,22 @@ img {
 }
 
 .feedback {
+  position: relative;
   background: #023AA2;
   color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .feedback::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    width: 159px;
+    left: 0;
+    top: 0;
+    opacity: .15;
+  }
 }
 
 .feedback__inner {
@@ -382,6 +402,18 @@ img {
   line-height: 1.38888;
   text-overflow: ellipsis;
   margin-bottom: 1em;
+}
+
+.feedback__input::-moz-placeholder {
+  color: #EBECF0;
+}
+
+.feedback__input:-ms-input-placeholder {
+  color: #EBECF0;
+}
+
+.feedback__input::placeholder {
+  color: #EBECF0;
 }
 
 @media (min-width: 480px) {
@@ -780,7 +812,7 @@ img {
 }
 
 .quote {
-  background: no-repeat top center url(../images/content/bg-fig.jpg);
+  background: no-repeat top center url(../img/content/bg-fig.jpg);
   text-align: center;
   font-size: 18px;
   line-height: 1.77777;
@@ -1533,12 +1565,50 @@ img {
 
 @media (min-width: 768px) {
   .header {
-    padding: 32px 0 100px;
+    padding: 0 0 100px;
   }
 }
 
 .header__inner {
-  padding: 0 0 84px;
+  justify-content: center;
+}
+
+.header__logo a {
+  flex-direction: column;
+}
+
+.header__logo img {
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .header__logo img {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__logo {
+    padding: 0 100px;
+  }
+}
+
+.header__subtitle {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #A3ABB6;
+  font-family: "Open-Sans", sans-serif;
+}
+
+.header__help {
+  display: none;
+}
+
+.header__burger {
+  margin-left: auto;
 }
 
 @media (min-width: 1200px) {

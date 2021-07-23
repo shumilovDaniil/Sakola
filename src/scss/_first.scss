@@ -54,7 +54,11 @@
       font-size: 20px;
       left: 0;
       top: 0;
-      transform: translate(160%, 35%);
+      transform: translate(115%, 25%);
+
+      @media (min-width: $md) {
+        transform: translate(160%, 35%);
+      }
     }
     
     @media (min-width: $md) {

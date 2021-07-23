@@ -1,0 +1,202 @@
+.article-slider {
+
+  &__inner {
+    transform: translateY(-25%);
+    
+    @media (min-width: $md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    
+    @media (min-width: $lg) {
+      transform: translateY(-40%);
+    }
+  }
+
+  &__item {
+    font-family: $secondary-font;
+    position: relative;
+    color: $white;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 260px;
+    display: flex;
+    box-shadow: 0 4px 7px 2px rgba(0,0,0,0.31);
+    margin-bottom: 1em;
+
+    @media (min-width: $md) {
+      flex: 1 1 45%;
+      min-height: 340px;
+      margin: 0 .5em 0 .5em;
+    }
+    
+    @media (min-width: $lg) {
+      flex: 1 1 60%;
+      min-height: 440px;
+      margin: 0 20px 0 20px;
+    }
+    
+    &::before {
+      position: absolute;
+      content: '';
+      background: url(../img/content/slider-1.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-height: 260px;
+      width: 100%;
+      z-index: -2;
+
+      @media (min-width: $md) {
+        min-height: 340px;
+      }
+
+      @media (min-width: $lg) {
+        min-height: 440px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: linear-gradient(0deg, #0C0C0C 0%, rgba(0, 0, 0, 0) 100%);
+      min-height: 260px;
+      width: 100%;
+      z-index: -1;
+      left: 0;
+      top: 0;
+
+      @media (min-width: $md) {
+        min-height: 340px;
+      }
+
+      @media (min-width: $lg) {
+        min-height: 440px;
+      }
+    }
+  }
+  
+  &__achive {
+    position: relative;
+
+    @media (min-width: $lg) {
+      flex: 1 1 25%;
+    }
+    
+    &::before {
+      background: url(../img/content/slider-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  &__item-inner {
+    align-self: flex-end;
+    padding: 0 20px 20px 23px;
+
+    @media (min-width: $xxl) {
+      padding: 0 55px 35px 40px;
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, .19);
+    border-radius: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background: $darkBlue;
+    }
+
+    @media (min-width: $xxl) {
+      font-size: 14px;
+      padding: 7px 25px;  
+      margin-bottom: 13px;
+    }
+  }
+
+  h4 {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2;
+
+    @media (min-width: $lg) {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    display: none;
+
+    @media (min-width: $lg) {
+      display: inline-block;
+      font-size: .9em;
+      margin: 0;
+    }
+
+    a {
+      font-weight: 700;
+      transition: color .3s ease;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    @media (min-width: $xxl) {
+      font-size: 16px;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+    font-size: .8em;
+
+    @media (min-width: $lg) {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    margin-bottom: 1em;
+    
+    @media (min-width: $md) {
+      margin: 20px 0 0 0;
+    }
+    
+    li + li {
+      margin-left: 24px;
+    }
+
+    button {
+      height: 12px;
+      width: 12px;
+      background: $grey;
+      border: none;
+      border-radius: 50%;
+    }
+
+    button {
+      &.active {
+        background: $blue;
+      }
+    }
+  }
+}

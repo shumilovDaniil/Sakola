@@ -3,17 +3,27 @@
     
     @media (min-width: $xl) {
       display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    
+    @media (min-width: $xxl) {
       justify-content: space-between;
     }
   }
 
   &__content {
     max-width: 531px;
-    margin: 0 auto;
+    margin: 0 auto 2em auto;
+    
+    @media (min-width: $md) {
+      max-width: none;
+    }
     
     @media (min-width: $xl) {
       margin: 0;
       padding-right: 30px;
+      max-width: 40%;
     }
   }
 
@@ -74,43 +84,52 @@
   }
 
   &__img {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     
-    @media (min-width: $sm) {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
+    .img-1 {
+      display: none;
+
+      @media (min-width: $md) {
+        display: block;
+      }
+      
+      @media (min-width: $xl) {
+        position: absolute;
+        height: 216px;
+        width: 296px;
+        bottom: 10%;
+        left: -20%;
+      }
     }
     
-    @media (min-width: $md) {
-      width: 60%;
-    }
     
-    @media (min-width: $xl) {
-      align-items: center;
-      position: relative;
-      max-width: 908px;
-      justify-content: flex-end;
-    }
   }
   
   img {
     width: 100%;
+    max-height: 200px;
     object-fit: cover;
-    display: inline-block;
-    
-    &:first-child {
-      @media (min-width: $xl) {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(0, -30%);
-      }
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+
+    @media (min-width: $md) {
+      flex: 1 1 45%;
+      margin: 0 .5em 0 .5em;
+    }
+
+    @media (min-width: $xl) {
+      margin: 0;
+      display: block;
+      max-height: 400px;
+      max-width: 400px;
     }
     
-    @media (min-width: $xl) {
-      width: auto;
-      max-width: 728px;
-      min-width: 296px;
+    @media (min-width: $xxl) {
+      max-height: 678px;
+      max-width: 630px;
     }
   }
 }

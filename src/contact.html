@@ -30,16 +30,16 @@
               <a class="header__list-link" href="./about.html">About</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#">Admission</a>
+              <a class="header__list-link" href="./academics.html">Academics</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#">Facilities</a>
+              <a class="header__list-link" href="./activity.html">Activity</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#">Campus</a>
+              <a class="header__list-link" href="./contact.html">Contact</a>
             </li>
             <li class="header__list-item">
-              <a class="header__list-link" href="#">Schools</a>
+              <a class="header__list-link" href="./featured.html">Featured</a>
             </li>
             <li class="header__list-item">
               <a class="header__list-link" href="#">Events</a>
@@ -55,7 +55,7 @@
     </div>
   </header>
 
-  <form class="form">
+  <section class="form">
     <fieldset>
       <div class="container">
         <figure class="form__content">
@@ -63,36 +63,41 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
         </figure>
 
-        <div class="form__inner">
-          <div class="form__item">
-            <label class="form__label">Full Name</label>
-            <input class="form__input" type="text" placeholder="Enter your full name">
+        <form>
+          <div class="form__inner">
+            <div class="form__item">
+              <label class="form__label" for="name">Full Name</label>
+              <input class="form__input" id="name" type="text" placeholder="Enter your full name">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="email">Email Address</label>
+              <input class="form__input" id="email" type="text" placeholder="Enter your email">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="phone">Phone Number</label>
+              <input class="form__input" id="phone" type="text" placeholder="Enter your phone number">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="company">Company Name</label>
+              <input class="form__input" id="company" type="text" placeholder="Enter your company name">
+            </div>
+            <div class="form__item form__item-textarea">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__input" id="message" placeholder="Enter your message" rows="3"></textarea>
+            </div>
           </div>
-          <div class="form__item">
-            <label class="form__label">Email Address</label>
-            <input class="form__input" type="text" placeholder="Enter your email">
-          </div>
-          <div class="form__item">
-            <label class="form__label">Phone Number</label>
-            <input class="form__input" type="text" placeholder="Enter your phone number">
-          </div>
-          <div class="form__item">
-            <label class="form__label">Company Name</label>
-            <input class="form__input" type="text" placeholder="Enter your company name">
-          </div>
-          <div class="form__item form__item-textarea">
-            <label class="form__label">Message</label>
-            <textarea class="form__input" placeholder="Enter your message" rows="3"></textarea>
-          </div>
-        </div>
 
-        <div class="form__send">
-          <div class="form__checkbox">
-            <input class="checkbox checkbox--custom" type="checkbox" id="checkbox">
-            <label class="checkbox__label" for="checkbox">Accept <strong>terms & conditions</strong></label>
+          <div class="form__send">
+            <div class="form__checkbox">
+              <label class="checkbox__label" for="checkbox">
+                <input class="checkbox" type="checkbox" id="checkbox"><span>Accept</span>
+                <a href="#">terms & conditions</a>
+              </label>
+            </div>
+            <button type="submit">Send</button>
           </div>
-          <button type="submit">Send</button>
-        </div>
+        </form>
+
       </div>
     </fieldset>
     <div class="location__address">
@@ -115,7 +120,7 @@
         <strong>support@sakolah.id</strong>
       </a>
     </div>
-  </form>
+  </section>
 
   <section class="location">
     <div class="container">

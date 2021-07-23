@@ -1,3 +1,31 @@
+.logo {
+  font-size: 2em;
+  font-family: $moderno;
+  transition: color .3s ease;
+  color: $white;
+  
+  @media (min-width: $xl) {
+    font-size: 39px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-right: .3em;
+  
+    @media (min-width: $xl) {
+      margin-right: 17px;
+    }
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
 .header {
   &__inner {
     display: flex;
@@ -20,7 +48,6 @@
     }
 
     li {
-  
       @media (min-width: $xxl) {
         font-family: $primary-font;
         font-weight: 600;
@@ -48,7 +75,7 @@
       font-family: $poppins;
       font-weight: 600;
       font-size: 18px;
-      line-height: 27px;
+      line-height: 1.5;
       color: $greySoft;
     }
   }

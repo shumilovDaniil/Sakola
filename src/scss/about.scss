@@ -1,18 +1,16 @@
-@import "_reset";
-@import "_global";
-@import "_vars";
+@import "global";
 
-@import "__header";
-@import "__first";
-@import "__feedback";
-@import "__footer";
-@import "__quote";
-@import "__choose";
-@import "__mission";
-@import "__gallery";
-@import "__teachers";
-@import "__achievements";
-@import "__location";
+@import "_header";
+@import "_first";
+@import "_feedback";
+@import "_footer";
+@import "_quote";
+@import "_choose";
+@import "_mission";
+@import "_gallery";
+@import "_teachers";
+@import "_achievements";
+@import "_location";
 
 
 .header,
@@ -22,13 +20,48 @@
 }
 
 .header {
-  
   @media (min-width: $md) {
-    padding: 32px 0 100px;
+    padding: 0 0 100px;
   }
 
   &__inner {
-    padding: 0 0 84px;
+    justify-content: center;
+  }
+
+  &__logo {
+    a {
+      flex-direction: column;
+    }
+  
+    img {
+      margin: 0;
+    
+      @media (min-width: $xl) {
+        margin: 0;
+      }
+    }
+
+    @media (min-width: $xxl) {
+      padding: 0 100px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.33333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $grey;
+    font-family: $secondary-font;
+  }
+
+  &__help {
+    display: none;
+  }
+
+  &__burger {
+    margin-left: auto;
   }
 }
 

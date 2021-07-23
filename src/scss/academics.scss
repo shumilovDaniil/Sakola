@@ -1,15 +1,13 @@
-@import "_reset";
-@import "_global";
-@import "_vars";
+@import "global";
 
-@import "__header";
-@import "__first";
-@import "__partners";
-@import "__academ-about";
-@import "__achievements";
-@import "__location";
-@import "__feedback";
-@import "__footer";
+@import "_header";
+@import "_first";
+@import "_partners";
+@import "_academ-about";
+@import "_achievements";
+@import "_location";
+@import "_feedback";
+@import "_footer";
 
 
 .header {
@@ -29,11 +27,38 @@
     }
   }
 
+  &__list-link {
+    &:hover {
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        background: $blue;
+        top: 250%;
+        left: 0;
+      }
+    }
+  }
+
   a {
     color: $dark;
     transition: color .3s ease;
 
     &:hover {
+      color: $blue;
+    }
+  }
+
+  &__help-tel {
+    border: 1px solid $greySoft;
+    border-radius: 6px;
+    padding: 16px 32px;
+    margin-right: 15px;
+
+    span {
       color: $blue;
     }
   }
@@ -80,17 +105,22 @@
   }
 
   &.academ-about--alone {
-
-    .academ-about__img {
-
-      @media (min-width: $xl) {
-        justify-content: flex-start;
-      }
+    .academ-about__inner {
+      justify-content: space-evenly;
     }
+    
+    .academ-about__img {
+      
+      @media (min-width: $md) {
+        margin-bottom: 2em;
+      }
 
-    img {
-      transform: none;
-      position: relative;
+      img {
+        @media (min-width: $md) {
+          flex: 1 1 auto;
+          margin: 0;
+        }
+      }
     }
   }
 }

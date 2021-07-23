@@ -1,4 +1,5 @@
-@import "_vars";
+@import "vars";
+@import "reset";
 
 body {
   overflow-x: hidden;
@@ -26,32 +27,4 @@ p {
 
 img {
   border-radius: 6px;
-}
-
-.logo {
-  font-size: 2em;
-  font-family: $moderno;
-  transition: color .3s ease;
-  color: $white;
-  
-  @media (min-width: $xl) {
-    font-size: 39px;
-  }
-
-  a {
-    display: flex;
-    align-items: center;
-  }
-
-  img {
-    margin-right: .3em;
-  
-    @media (min-width: $xl) {
-      margin-right: 17px;
-    }
-  }
-
-  &:hover {
-    color: $blue;
-  }
 }

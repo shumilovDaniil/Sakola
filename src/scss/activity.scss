@@ -1,12 +1,11 @@
-@import "_reset";
-@import "_global";
-@import "_vars";
+@import "global";
 
-@import "__header";
-@import "__first";
-@import "__event-list";
-@import "__feedback";
-@import "__footer";
+@import "_header";
+@import "_first";
+@import "_calendar";
+@import "_event-list";
+@import "_feedback";
+@import "_footer";
 
 
 .header, .main {

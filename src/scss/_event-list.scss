@@ -11,7 +11,7 @@
     font-family: $primary-font;
     font-weight: 700;
     font-size: 2em;
-    line-height: 1.86666;
+    line-height: 1.56666;
     color: $darkGrey;
 
     @media (min-width: $lg) {
@@ -25,11 +25,22 @@
   
   p {
     @media (min-width: $lg) {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
   }
 
   &__item {
+    &:first-child {
+      .event-list__when {
+        background: $orange;
+      }
+    }
+  
+    &:last-child {
+      .event-list__when {
+        background: $sky;
+      }
+    }
 
     @media (min-width: $sm) {
       display: flex;
@@ -41,7 +52,7 @@
     @media (min-width: $lg) {
       flex-direction: row;
       max-width: none;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
   }
 
@@ -57,9 +68,9 @@
 
     @media (min-width: $lg) {
       margin-bottom: 1em;
-      min-width: 142px;
-      max-width: 142px;
-      margin: 0 38px 0 0;
+      min-width: 120px;
+      max-width: 120px;
+      margin: 0 25px 0 0;
     }
   }
   
@@ -67,15 +78,15 @@
   &__time {
     flex: 1 1 50%;
     padding: .5em 0;
-    
+    font-size: .9em;
   }
   
   &__when {
-    background: $orange;
+    background: $pink;
     border-radius: 6px 0 0 6px;
 
     @media (min-width: $lg) {
-      padding: 20px 0;
+      padding: 20px 0 0 0;
       border-radius: 6px 6px 0 0;
     }
     
@@ -86,10 +97,11 @@
         width: 100%;
         max-width: 100%;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 26px;
         line-height: 1.86111;
       }
     }
+
   }
   
   &__time {
@@ -100,8 +112,8 @@
       border-radius: 0 0 6px 6px;
       bottom: 0;
       left: 0;
-      padding: 20px 30px 44px;
-      font-size: 18px;
+      padding: 20px 30px 0;
+      font-size: 14px;
     }
   }
   
@@ -127,8 +139,7 @@
 
       @media (min-width: $lg) {
         object-fit: cover;
-        max-width: 465px;
-        height: 100%;
+        max-width: 360px;
       }
     }
   }
@@ -139,7 +150,7 @@
     line-height: 1.625;
 
     @media (min-width: $lg) {
-      padding: 30px 55px 50px 40px;
+      padding: 20px 45px 30px 30px;
     }
     
     h4 {
@@ -151,8 +162,8 @@
       margin-bottom: 0.5em;
 
       @media (min-width: $lg) {
-        font-size: 26px;
-        margin-bottom: 16px;
+        font-size: 24px;
+        margin-bottom: 10px;
       }
     }
     
@@ -163,8 +174,8 @@
 
       @media (min-width: $lg) {
         display: inline-block;
-        font-size: 16px;
-        margin-bottom: 6px;
+        font-size: 14px;
+        margin-bottom: 4px;
       }
     }
 

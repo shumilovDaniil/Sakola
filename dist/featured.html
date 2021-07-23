@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/activity.css">
+  <link rel="stylesheet" href="../css/featured.css">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Cairo:wght@300;400;600;700;900&family=Lato:wght@400;900&family=MuseoModerno:wght@700&family=Open+Sans&family=Poppins:wght@600&display=swap"
     rel="stylesheet">
-  <title>Sakola Activity</title>
+  <title>Sakola Featured</title>
 </head>
 
 <body>
@@ -58,79 +58,169 @@
   <main class="main">
     <div class="container">
       <div class="main__content">
-        <h1>Activity</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <h1>Featured Articles</h1>
+        <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </p>
       </div>
     </div>
   </main>
 
-  <section class="calendar">
+  <section class="article-slider">
     <div class="container">
-      <div class="elfsight-app-5236752d-baaf-48db-a034-ca1873da10ba"></div>
+      <div class="article-slider__inner">
+        <div class="article-slider__item">
+          <div class="article-slider__item-inner">
+            <a class="article-slider__tag" href="#">Science</a>
+            <h4>Apply For Community Scholarship</h4>
+            <strong>Admin - 1d ago - 4 min read</strong>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              <a href="#">Continue Reading...</a>
+            </p>
+          </div>
+        </div>
+        <div class="article-slider__item article-slider__achive">
+          <div class="article-slider__item-inner">
+            <a class="article-slider__tag" href="#">Achievment</a>
+            <h4>Sakola as a favourite schools in San Franciso</h4>
+            <strong>Admin - 1d ago - 4 min read</strong>
+          </div>
+        </div>
+        <ul class="article-slider__dots">
+          <li><button type="checkbox"></button></li>
+          <li><button type="checkbox"></button></li>
+          <li><button type="checkbox" class="active"></button></li>
+          <li><button type="checkbox"></button></li>
+          <li><button type="checkbox"></button></li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="event-list">
+  <section class="news">
     <div class="container">
-      <div class="event-list__title">
-        <h3>Event List</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua</p>
-      </div>
-      <div class="event-list__wrapper">
-        <div class="event-list__item">
-          <div class="event-list__date">
-            <div class="event-list__when"><strong>2</strong> November</div>
-            <time class="event-list__time" datetime="08:00-04:00">08:00 AM 04:00 PM</time>
-          </div>
-          <div class="event-list__news">
-            <img src="./img/content/event-list-img1.jpg" alt="Image description">
-            <div class="event-list__content">
-              <h4>Holiday Trip with Elementary Class</h4>
-              <strong>By Admin, on Nov 23th, 2020 | 1 days ago</strong>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu</p>
-              <a href="#">Continue Reading...</a>
-            </div>
-          </div>
+      <div class="news__inner">
+        <div class="news__content">
+          <h2>Latest News</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
         </div>
-        <div class="event-list__item">
-          <div class="event-list__date">
-            <div class="event-list__when"><strong>3-4</strong> November</div>
-            <time class="event-list__time" datetime="08:00-04:00">10:00 AM 04:00 PM</time>
-          </div>
-          <div class="event-list__news">
-            <img src="./img/content/event-list-img2.jpg" alt="Image description">
-            <div class="event-list__content">
-              <h4>Meetup with Senior Teachers 2020</h4>
-              <strong>By Admin, on Nov 23th, 2020 | 1 days ago</strong>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu</p>
-              <a href="#">Continue Reading...</a>
-            </div>
-          </div>
-        </div>
-        <div class="event-list__item">
-          <div class="event-list__date">
-            <div class="event-list__when"><strong>8</strong> November</div>
-            <time class="event-list__time" datetime="08:00-04:00">11:00 AM 02:00 PM</time>
-          </div>
-          <div class="event-list__news">
-            <img src="./img/content/event-list-img3.jpg" alt="Image description">
-            <div class="event-list__content">
-              <h4>Holiday Trip with Elementary Class</h4>
-              <strong>By Admin, on Nov 23th, 2020 | 1 days ago</strong>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu</p>
-              <a href="#">Continue Reading...</a>
-            </div>
-          </div>
+        <div class="news__tabs">
+          <button class="news__tabs-active" type="button">All Categories</button>
+          <button type="button">Elementary School</button>
+          <button type="button">Campus</button>
+          <button type="button">Education</button>
         </div>
       </div>
-      <a class="event-list__link" href="#">Load More</a>
+      <div class="news__list">
+        <a class="news__item" href="#">
+          <img src="./img/content/news-1.jpg" alt="Image description">
+          <h4>Students were on a trip Jakarta, Indonesia</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-2.jpg" alt="Image description">
+          <h4>Jobs, career presentation to Coincide with Conference</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-3.jpg" alt="Image description">
+          <h4>Fall Sports Practices, Meeting in December</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-1.jpg" alt="Image description">
+          <h4>Students were on a trip Jakarta, Indonesia</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-2.jpg" alt="Image description">
+          <h4>Jobs, career presentation to Coincide with Conference</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-3.jpg" alt="Image description">
+          <h4>Fall Sports Practices, Meeting in December</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-1.jpg" alt="Image description">
+          <h4>Students were on a trip Jakarta, Indonesia</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-2.jpg" alt="Image description">
+          <h4>Jobs, career presentation to Coincide with Conference</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+        <a class="news__item" href="#">
+          <img src="./img/content/news-3.jpg" alt="Image description">
+          <h4>Fall Sports Practices, Meeting in December</h4>
+          <strong>By Admin, on <time datetime="2020-11-23">Nov 23th, 2020</time></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <span>Read more</span>
+        </a>
+      </div>
+      <div class="news-control">
+        <button class="news-control__btn news-control__btn--left" type="button">Previous</button>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a class="active" href="#">3</a></li>
+          <li><a href="#">4</a></li>
+        </ul>
+        <button class="news-control__btn news-control__btn--right" type="button">Next</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="location">
+    <div class="container">
+      <div class="location__address">
+        <address class="location__item">
+          <div class="location__icon">
+            <img src="./img/icons/loc-icon1.svg" alt="Image description">
+          </div>
+          <strong>832 Thompson Drive, San Fransisco<br>CA 94107, United States</strong>
+        </address>
+        <a class="location__item location__link" href="tel:123345123556">
+          <div class="location__icon">
+            <img src="./img/icons/loc-icon2.svg" alt="Image description">
+          </div>
+          <strong>+123 345123 556</strong>
+        </a>
+        <a class="location__item location__link" href="mailto:support@sakolah.id">
+          <div class="location__icon">
+            <img src="./img/icons/loc-icon3.svg" alt="Image description">
+          </div>
+          <strong>support@sakolah.id</strong>
+        </a>
+      </div>
+      <h3>Get in Touch With Us</h3>
+      <div class="location__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A305fd8251f19f73775f4551d5cd42b52d8b13ca3b9f47d5dc8f85f16f4f736de&amp;source=constructor"
+          width="100%" height="460" frameborder="0">
+        </iframe>
+      </div>
     </div>
   </section>
 
@@ -283,6 +373,7 @@
     </div>
   </footer>
 
+  <script src="./js/script.js"></script>
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </body>
 
