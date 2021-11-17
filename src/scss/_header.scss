@@ -1,129 +1,154 @@
 .logo {
-  font-size: 2em;
-  font-family: $moderno;
-  transition: color .3s ease;
-  color: $white;
-  
-  @media (min-width: $xl) {
-    font-size: 39px;
-  }
+	font-size: 2em;
+	font-family: $moderno;
+	transition: color 0.3s ease;
+	color: $white;
 
-  a {
-    display: flex;
-    align-items: center;
-  }
+	@media (min-width: $xl) {
+		font-size: 39px;
+	}
 
-  img {
-    margin-right: .3em;
-  
-    @media (min-width: $xl) {
-      margin-right: 17px;
-    }
-  }
+	a {
+		display: flex;
+		align-items: center;
+	}
 
-  &:hover {
-    color: $blue;
-  }
+	img {
+		margin-right: 0.3em;
+
+		@media (min-width: $xl) {
+			margin-right: 17px;
+		}
+	}
+
+	&:hover {
+		color: $blue;
+	}
 }
 
 .header {
-  &__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em 0;
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2em 0;
 
-    @media (min-width: $xl) {
-      padding: 32px 0 84px;
-    }
-  }
-  
-  &__list {
-    display: none;
-  
-    @media (min-width: $xxl) {
-      display: flex;
-      justify-content: space-between;
-    }
+		@media (min-width: $xl) {
+			padding: 30px 0 30px;
+		}
+	}
 
-    li {
-      @media (min-width: $xxl) {
-        font-family: $primary-font;
-        font-weight: 600;
-        font-size: 18px;
-        color: $greySoft;
-        transition: color .3s ease;
-    
-        &:hover {
-          color: $blue;
-        }
-    
-        & + li {
-          margin-left: 75px;
-        }
-      }
-    }
-  }
+	&__list {
+		display: none;
 
-  &__help {
-    display: none;
-    
-    @media (min-width: $xxl) {
-      display: block;
-      transition: color .3s ease;
-      font-family: $poppins;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 1.5;
-      color: $greySoft;
-    }
-  }
+		@media (min-width: $xxl) {
+			display: flex;
+			justify-content: space-between;
+		}
 
-  &__help-tel {
-    
-    @media (min-width: $xxl) {
-      position: relative;
-      margin-right: 63px;
-      transition: color .3s ease;
-      
-      &:hover {
-        color: $blue;
-      }
-      
-      span {
-        margin-right: 25px;
-        font-family: 'icomoon';
-      }
-    }
-  }
-  
-  &__help-search {
-    
-    @media (min-width: $xxl) {
-      position: absolute;
-      transition: color .3s ease;
-      transform: translateX(140%);
-      font-family: 'icomoon';
-      
-      &:hover {
-        color: $blue;
-      }
-    }
-  }
-  
-  &__burger {
-    font-size: 2em;
-    font-family: 'icomoon';
-    cursor: pointer;
-    transition: color .3s ease;
+		&.active {
+			position: absolute;
+			display: block;
+			right: 0;
+			top: 0;
+			transform: translate(0, 100px);
+			background: $dark;
+			width: 100%;
+			height: 1000px;
+			z-index: 100;
+			padding: 30px 50px;
+			border-radius: 8px;
+			border: 1px solid $darkBlue;
 
-    &:hover {
-      color: $blue;
-    }
-    
-    @media (min-width: $xxl) {
-      display: none;
-    }
-  }
+			li {
+				padding-bottom: 10px;
+				font-size: 18px;
+			}
+
+			a {
+				transition: color 0.3s ease;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+
+		li {
+			@media (min-width: $xxl) {
+				font-family: $primary-font;
+				font-weight: 600;
+				font-size: 18px;
+				color: $greySoft;
+				transition: color 0.3s ease;
+
+				&:hover {
+					color: $blue;
+				}
+
+				& + li {
+					margin-left: 75px;
+				}
+			}
+		}
+	}
+
+	&__help {
+		display: none;
+
+		@media (min-width: $xxl) {
+			display: block;
+			transition: color 0.3s ease;
+			font-family: $poppins;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 1.5;
+			color: $greySoft;
+		}
+	}
+
+	&__help-tel {
+		@media (min-width: $xxl) {
+			position: relative;
+			margin-right: 63px;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $blue;
+			}
+
+			span {
+				margin-right: 25px;
+				font-family: 'icomoon';
+			}
+		}
+	}
+
+	&__help-search {
+		@media (min-width: $xxl) {
+			position: absolute;
+			transition: color 0.3s ease;
+			transform: translateX(140%);
+			font-family: 'icomoon';
+
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+
+	&__burger {
+		font-size: 2em;
+		font-family: 'icomoon';
+		cursor: pointer;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $blue;
+		}
+
+		@media (min-width: $xxl) {
+			display: none;
+		}
+	}
 }

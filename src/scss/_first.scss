@@ -1,73 +1,72 @@
 .main {
-  text-align: center;
-  color: $grey;
-  padding-bottom: 2em;
+	text-align: center;
+	color: $grey;
+	padding-bottom: 2em;
 
-  @media (min-width: $md) {
-    font-size: 16px;
-    padding-bottom: 211px;
-  }
-  
-  &__content {
-    max-width: 570px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 2em;
-    font-family: $primary-font;
-    font-weight: 700;
-    line-height: 1.375;
-    margin-bottom: 1em;
-    color: $greySoft;
-    
-    @media (min-width: $md) {
-      font-size: 80px;
-      margin-bottom: 28px;
-    }
-  }
+	@media (min-width: $md) {
+		font-size: 16px;
+		padding-bottom: 60px;
+	}
 
-  p {
+	&__content {
+		max-width: 570px;
+		margin: 0 auto;
+	}
 
-    @media (min-width: $md) {
-      margin-bottom: 43px;
-    }
-  }
-  
-  a {
-    position: relative;
-    display: inline-block;
-    color: $white;
-    padding: 10px 30px 10px 55px;
-    border: 1px solid $greySoft;
-    border-radius: 6px;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 34px;
-    transition: border .3s ease, background-color .3s ease;
+	h1 {
+		font-size: 2em;
+		font-family: $primary-font;
+		font-weight: 700;
+		line-height: 1.375;
+		margin-bottom: 1em;
+		color: $greySoft;
 
-    &::before {
-      position: absolute;
-      content: "\e901";
-      font-family: 'icomoon';
-      font-size: 20px;
-      left: 0;
-      top: 0;
-      transform: translate(115%, 25%);
+		@media (min-width: $md) {
+			font-size: 80px;
+			margin-bottom: 28px;
+		}
+	}
 
-      @media (min-width: $md) {
-        transform: translate(160%, 35%);
-      }
-    }
-    
-    @media (min-width: $md) {
-      padding: 13px 40px 13px 70px;
-    }
-    
-    &:hover {
-      border: 1px solid $dark;
-      background: $dark;
-    }
-  }
+	p {
+		@media (min-width: $md) {
+			margin-bottom: 43px;
+		}
+	}
+
+	a {
+		position: relative;
+		display: inline-block;
+		color: $white;
+		padding: 10px 30px 10px 55px;
+		border: 1px solid $greySoft;
+		border-radius: 6px;
+		font-family: $primary-font;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 34px;
+		transition: border 0.3s ease, background-color 0.3s ease;
+
+		&::before {
+			position: absolute;
+			content: '\e901';
+			font-family: 'icomoon';
+			font-size: 20px;
+			left: 0;
+			top: 0;
+			transform: translate(115%, 25%);
+
+			@media (min-width: $md) {
+				transform: translate(160%, 35%);
+			}
+		}
+
+		@media (min-width: $md) {
+			padding: 13px 40px 13px 70px;
+		}
+
+		&:hover {
+			border: 1px solid $dark;
+			background: $dark;
+		}
+	}
 }

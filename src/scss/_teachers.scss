@@ -1,86 +1,86 @@
 .teachers {
-  margin-bottom: 2em;
-  
-  &__inner {
-    max-width: 623px;
-    text-align: center;
-    margin: 0 auto;
-    color: $darkGrey;
-  }
+	margin-bottom: 2em;
 
-  h2 {
-    font-size: 2em;
-    font-family: $primary-font;
-    font-weight: 700;
-    line-height: 1.33333;
-    margin-bottom: 1em;
-    color: $dark;
+	&__inner {
+		max-width: 623px;
+		text-align: center;
+		margin: 0 auto;
+		color: $darkGrey;
+	}
 
-    @media (min-width: $xl) {
-      font-size: 58px;
-      margin-bottom: 13px;
-    } 
-  }
+	h2 {
+		font-size: 2em;
+		font-family: $primary-font;
+		font-weight: 700;
+		line-height: 1.33333;
+		margin-bottom: 1em;
+		color: $dark;
 
-  p {
-    margin-bottom: 30px;
-  }
+		@media (min-width: $xl) {
+			font-size: 58px;
+			margin-bottom: 13px;
+		}
+	}
 
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	p {
+		margin-bottom: 30px;
+	}
 
-    @media (min-width: $sm) {
-      justify-content: space-evenly;
-    } 
-  }
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
-  img {
-    border-radius: 6px;
-    height: 257px;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  a {
-    text-align: center;
-    margin-bottom: 1em;
-    box-shadow: 0 7px 22px rgba(143, 134, 196, .07);
-    border-radius: 6px;
-    color: #202020;
-    transition: color .3s ease, background-color .3s ease;
-    
-    &:hover {
-      background: $darkBlue;
-      color: $white;
-    }
+		@media (min-width: $sm) {
+			justify-content: space-evenly;
+		}
+	}
 
-    @media (min-width: $sm) {
-      max-width: 40%;
-    } 
+	img {
+		border-radius: 6px;
+		height: 257px;
+		width: 100%;
+		object-fit: cover;
+	}
 
-    @media (min-width: $md) {
-      max-width: 28%;
-    } 
-    
-    @media (min-width: $xl) {
-      max-width: 18%;
-      margin-bottom: 40px;
-    } 
-  }
+	a {
+		text-align: center;
+		margin-bottom: 1em;
+		box-shadow: 0 7px 22px rgba(143, 134, 196, 0.07);
+		border-radius: 6px;
+		color: #202020;
+		transition: color 0.3s ease, background-color 0.3s ease;
 
-  &__item-name {
-    display: inline-block;
-    padding: .3em 0 1em;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 1.33333;
+		&:hover {
+			background: $darkBlue;
+			color: $white;
+		}
 
-    @media (min-width: $xl) {
-      padding: 12px 0 37px;
-      font-size: 24px;
-    } 
-  }
+		@media (min-width: $sm) {
+			max-width: 40%;
+		}
+
+		@media (min-width: $md) {
+			max-width: 28%;
+		}
+
+		@media (min-width: $xl) {
+			max-width: 18%;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__item-name {
+		display: inline-block;
+		padding: 0.3em 0 1em;
+		font-family: $primary-font;
+		font-weight: 700;
+		font-size: 1em;
+		line-height: 1.33333;
+
+		@media (min-width: $xl) {
+			padding: 12px 0 37px;
+			font-size: 24px;
+		}
+	}
 }

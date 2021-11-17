@@ -1,315 +1,308 @@
 .footer {
-  font-family: $primary-font;
-  background: $dark;
-  color: $grey;
-  padding-top: 2em;
-  line-height: 1.875;
+	font-family: $primary-font;
+	background: $dark;
+	color: $grey;
+	padding-top: 2em;
+	line-height: 1.875;
 
-  @media (min-width: $xxl) {
-    padding: 100px 0 20px;
-  }
+	@media (min-width: $xxl) {
+		padding: 60px 0 0;
+	}
 
-  &__menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 2em;
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin-bottom: 2em;
 
-    @media (min-width: $md) {
-      justify-content: center;
-    }
+		@media (min-width: $md) {
+			justify-content: center;
+		}
 
-    @media (min-width: $lg) {
-      justify-content: space-between;
-      margin-bottom: 30px;
-    }
-  }
-  
-  &__list {
-    width: 50%;
-    margin-bottom: 1em;
-    padding-right: 20px;
-    
-    @media (min-width: $sm) {
-      width: 33.3333%;
-    }
-    
-    @media (min-width: $md) {
-      width: 25%;
-    }
-    
-    @media (min-width: $lg) {
-      width: 11.66666%;
-    }
-    
-    li {
-      transition: color .3s ease;
-      
-      @media (min-width: $xxl) {
-        margin-bottom: 14px; 
-      }
+		@media (min-width: $lg) {
+			justify-content: space-between;
+			margin-bottom: 30px;
+		}
+	}
 
-      &:hover {
-        color: $blue;
-      }
-    }
-  }
-  
-  
-  &__logo-footer {
-    margin-bottom: 1em;
-  }
-  
-  h4 {
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 1.85;
-    color: $greySoft;
-    margin-bottom: 1em;
-    
-    @media (min-width: $xxl) {
-      font-size: 20px;
-    }
-  }
-  
-  &__content {
-    
-    @media (min-width: $md) {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    @media (min-width: $xxl) {
-      padding-bottom: 50px;
-    }
-  }
-  
-  &__info {
-    
-    p {
-      margin-bottom: 42px;
-    }
-    
-    @media (min-width: $md) {
-      max-width: 40%;
-    }
+	&__list {
+		width: 50%;
+		margin-bottom: 1em;
+		padding-right: 20px;
 
-    @media (min-width: $xxl) {
-      max-width: 803px;
-    }
-  }
-  
-  &__addresses {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
+		@media (min-width: $sm) {
+			width: 33.3333%;
+		}
 
-    a {
-      transition: color .3s ease;
+		@media (min-width: $md) {
+			width: 25%;
+		}
 
-      &:hover {
-        color: $blue;
-      }
-    }
-    
-    .address,
-    a {
-      margin-top: 1em;
+		@media (min-width: $lg) {
+			width: 11.66666%;
+		}
 
-      @media (min-width: $xxl) {
-        margin: 0;
-      }
-    }
+		li {
+			transition: color 0.3s ease;
 
-    @media (min-width: $xxl) {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      margin: 0;
-    }
-  }
+			@media (min-width: $xxl) {
+				margin-bottom: 14px;
+			}
 
-  &__social {
-    
-    @media (min-width: $md) {
-      width: 50%;
-    }
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
 
-    @media (min-width: $xxl) {
-      max-width: 490px;
-    }
-  }
-  
-  h5 {
-    margin-bottom: 1em;
-    
-  }
-  
-  &__social-list {
-    font-family: 'icomoon';
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
-    max-width: 493px;
-    font-size: 24px;
+	&__logo-footer {
+		margin-bottom: 1em;
+	}
 
-    @media (min-width: $xxl) {
-      max-width: 344px;
-    }
-    
-    span {
-      transition: color .3s ease;
+	h4 {
+		font-weight: 700;
+		font-size: 1em;
+		line-height: 1.85;
+		color: $greySoft;
+		margin-bottom: 1em;
 
-      &:hover {
-        color: $blue;
-      }
-    }
-  }
+		@media (min-width: $xxl) {
+			font-size: 20px;
+		}
+	}
 
-  &__download {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 2em;
-    
-    @media (min-width: $sm) {
-      max-width: 231px;
-    }
+	&__content {
+		@media (min-width: $md) {
+			display: flex;
+			justify-content: space-between;
+		}
 
-    @media (min-width: $lg) {
-      margin-bottom: 0;
-      max-width: 493px;
-      justify-content: space-between;
-    }
-  }
-  
-  &__download-btn {
-    position: relative;
-    padding: 11px 45px 16px 76px;
-    border-radius: 6px;
-    background: #171B2C;
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-    line-height: 1.71428;
-    color: $greySoft;
-    font-family: 'Lato';
-    transition: background-color .3s ease;
+		@media (min-width: $xxl) {
+			padding-bottom: 50px;
+		}
+	}
 
-    @media (min-width: $sm) {
-      max-width: 231px;
-    }
-    
-    span {
-      margin-top: 1px;
-      font-weight: 900;
-      font-size: 20px;
-      line-height: 1.2;
-      color: $greySoft;
-    }
+	&__info {
+		p {
+			margin-bottom: 42px;
+		}
 
-    &:hover {
-      background: $darkBlue;
-    }
+		@media (min-width: $md) {
+			max-width: 40%;
+		}
 
-    &::after {
-      position: absolute;
-      content: '';
-      left: 30%;
-      top: 0;
-    }
-  }
+		@media (min-width: $xxl) {
+			max-width: 803px;
+		}
+	}
 
-  .btn__app-store {
-    position: relative;
-    margin-bottom: 1em;
+	&__addresses {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2em;
 
-    @media (min-width: $lg) {
-      margin: 0;
-    }
+		a {
+			transition: color 0.3s ease;
 
-    &::after {
-      height: 38px;
-      width: 30px;
-      background: no-repeat center url(../img/icons/appstore.svg);
-      transform: translate(-130%, 40%);
-    }
-  }
-  
-  .btn__google-play {
-  
-    &::after {
-      height: 32px;
-      width: 26px;
-      background: no-repeat center url(../img/icons/googleplay.svg);
-      transform: translate(-140%, 70%);
-    }
-  }
+			&:hover {
+				color: $blue;
+			}
+		}
 
-  &__policy {
-    font-size: .8em;
-    text-align: center;
-    color: $greySoft;
-    font-weight: 600;
-    border-top: 1px solid rgba(243, 243, 243, .08);;
-    padding: 25px 0;
+		.address,
+		a {
+			margin-top: 1em;
 
-    @media (min-width: $md) {
-      display: flex;
-      justify-content: space-between;
-    }
+			@media (min-width: $xxl) {
+				margin: 0;
+			}
+		}
 
-    @media (min-width: $xxl) {
-      font-size: 16px;
-    }
-    
-    p {
-      margin-bottom: 1em;
+		@media (min-width: $xxl) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+			margin: 0;
+		}
+	}
 
-      @media (min-width: $md) {
-        margin: 0;
-      }
-    }
-    
-    nav {
-      margin-bottom: 1em;
+	&__social {
+		@media (min-width: $md) {
+			width: 50%;
+		}
 
-      @media (min-width: $md) {
-        margin: 0; 
-      }
-    }
+		@media (min-width: $xxl) {
+			max-width: 490px;
+		}
+	}
 
-    ul {
+	h5 {
+		margin-bottom: 1em;
+	}
 
-      @media (min-width: $md) {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
+	&__social-list {
+		font-family: 'icomoon';
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2em;
+		max-width: 493px;
+		font-size: 24px;
 
-    li {
-      margin-bottom: 1em;
+		@media (min-width: $xxl) {
+			max-width: 344px;
+		}
 
-      @media (min-width: $md) {
-        margin: 0 0 0 1em;
-      }
-    }
-    
-    a {
-      font-weight: 400;
-      transition: color .3s ease;
-      color: $grey;
+		span {
+			transition: color 0.3s ease;
 
-      &:hover {
-        color: $blue;
-      }
-    }
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
 
-    strong {
-      span {
-        color: #D93838;
-      }
-    }
-  }
+	&__download {
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 2em;
+
+		@media (min-width: $sm) {
+			max-width: 231px;
+		}
+
+		@media (min-width: $lg) {
+			margin-bottom: 0;
+			max-width: 493px;
+			justify-content: space-between;
+		}
+	}
+
+	&__download-btn {
+		position: relative;
+		padding: 11px 45px 16px 76px;
+		border-radius: 6px;
+		background: #171b2c;
+		font-size: 14px;
+		width: 100%;
+		text-align: center;
+		line-height: 1.71428;
+		color: $greySoft;
+		font-family: 'Lato';
+		transition: background-color 0.3s ease;
+
+		@media (min-width: $sm) {
+			max-width: 231px;
+		}
+
+		span {
+			margin-top: 1px;
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 1.2;
+			color: $greySoft;
+		}
+
+		&:hover {
+			background: $darkBlue;
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			left: 30%;
+			top: 0;
+		}
+	}
+
+	.btn__app-store {
+		position: relative;
+		margin-bottom: 1em;
+
+		@media (min-width: $lg) {
+			margin: 0;
+		}
+
+		&::after {
+			height: 38px;
+			width: 30px;
+			background: no-repeat center url(../img/icons/appstore.svg);
+			transform: translate(-130%, 40%);
+		}
+	}
+
+	.btn__google-play {
+		&::after {
+			height: 32px;
+			width: 26px;
+			background: no-repeat center url(../img/icons/googleplay.svg);
+			transform: translate(-140%, 70%);
+		}
+	}
+
+	&__policy {
+		font-size: 0.8em;
+		text-align: center;
+		color: $greySoft;
+		font-weight: 600;
+		border-top: 1px solid rgba(243, 243, 243, 0.08);
+		padding: 25px 0;
+
+		@media (min-width: $md) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@media (min-width: $xxl) {
+			font-size: 16px;
+		}
+
+		p {
+			margin-bottom: 1em;
+
+			@media (min-width: $md) {
+				margin: 0;
+			}
+		}
+
+		nav {
+			margin-bottom: 1em;
+
+			@media (min-width: $md) {
+				margin: 0;
+			}
+		}
+
+		ul {
+			@media (min-width: $md) {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+		li {
+			margin-bottom: 1em;
+
+			@media (min-width: $md) {
+				margin: 0 0 0 1em;
+			}
+		}
+
+		a {
+			font-weight: 400;
+			transition: color 0.3s ease;
+			color: $grey;
+
+			&:hover {
+				color: $blue;
+			}
+		}
+
+		strong {
+			span {
+				color: #d93838;
+			}
+		}
+	}
 }

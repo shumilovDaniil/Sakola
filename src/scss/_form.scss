@@ -1,159 +1,155 @@
 .form {
-  background: $dark;
-  color: $white;
-  padding: 2em 0;
-  text-align: center;
-  margin-bottom: 10em;
+	background: $dark;
+	color: $white;
+	padding: 2em 0;
+	text-align: center;
+	margin-bottom: 10em;
 
-  @media (min-width: $lg) {
-    font-size: 16px;
-    padding: 97px 0 0 0;
-    margin-bottom: 90px;
-  } 
-  
-  &__content {
-    max-width: 658px;
-    margin: 0 auto;
-    color: $greySoft;
-  }
-  
-  legend {
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 2em;
-    line-height: 1.33333;
-    margin-bottom: .5em;
-    color: $white;
-    
-    @media (min-width: $lg) {
-      font-size: 80px;
-      margin-bottom: 16px;
-    }  
-  }
+	@media (min-width: $lg) {
+		font-size: 16px;
+		padding: 60px 0 0 0;
+		margin-bottom: 90px;
+	}
 
-  p {
-    max-width: 531px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-  }
+	&__content {
+		margin: 0 auto;
+		color: $greySoft;
+	}
 
-  &__inner {
-    @media (min-width: $lg) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      justify-content: space-between;
-      max-width: 1080px;
-    }
-  }
-  
-  &__item {
-    @media (min-width: $lg) {
-      flex: 0 0 465px;
-    }  
-  }
-  
-  &__item-textarea {
-    
-    textarea {
-      border-bottom: 2px solid $blue;
-      resize: none;
-    }
-    
-    @media (min-width: $lg) {
-      flex: 0 0 100%;
-    }
-  }
-  
-  &__label,
-  &__input {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    margin: 0 auto;
+	legend {
+		font-family: $primary-font;
+		font-weight: 700;
+		font-size: 2em;
+		line-height: 1.33333;
+		margin-bottom: 0.5em;
+		color: $white;
 
-    @media (min-width: $lg) {
-      width: 100%;
-    }
-  }
-  
-  &__label {
-    line-height: 1.77777;
-    color: $grey;
-  }
+		@media (min-width: $lg) {
+			font-size: 80px;
+			margin-bottom: 16px;
+		}
+	}
 
-  &__input {
-    margin-bottom: 2em;
-    padding: 1em .5em;
-    font-family: $primary-font;
-    font-weight: 600;
-    line-height: 1.33333;
-    color: $white;
-    background: transparent;
-    border-color:  solid $greySoft;
-    border-width: 0 0 1px 0;
+	p {
+		max-width: 531px;
+		margin: 0 auto 30px auto;
+	}
 
-    &:focus {
-      border-color: $blue;
-    }
+	&__inner {
+		@media (min-width: $lg) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			justify-content: space-between;
+			max-width: 1080px;
+		}
+	}
 
-    @media (min-width: $lg) {
-      font-size: 18px;
-    }
-  }
-  
-  &__send {
-    
-    @media (min-width: $lg) {
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1080px;
-    }
-  }
-  
-  .checkbox {
-    border: 2px solid $grey;
-    border-radius: 4px;
-    margin-bottom: 2em; 
-  }
+	&__item {
+		@media (min-width: $lg) {
+			flex: 0 0 465px;
+		}
+	}
 
-  .checkbox__label {
-    color: $grey;
+	&__item-textarea {
+		textarea {
+			border-bottom: 2px solid $blue;
+			resize: none;
+		}
 
-    a {
-      font-weight: 700;
-    }
-    
-    @media (min-width: $lg) {
-      font-size: 16px;
-    }
-  }
+		@media (min-width: $lg) {
+			flex: 0 0 100%;
+		}
+	}
 
-  button {
-    display: inline-block;
-    margin: 0 auto;
-    font-weight: 700;
-    line-height: 1.38888;
-    color: $greySoft;
-    background: $darkBlue;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 30px;
-    cursor: pointer;
-    transition: background-color .3s ease, color .3s ease;
+	&__label,
+	&__input {
+		display: flex;
+		flex-wrap: wrap;
+		width: 70%;
+		margin: 0 auto;
 
-    @media (min-width: $lg) {
-      margin: 0;
-      padding: 22px 100px;
-      font-size: 18px;
-    }
+		@media (min-width: $lg) {
+			width: 100%;
+		}
+	}
 
-    &:hover {
-      background: $white;
-      color: $blue;
-    }
-  }
+	&__label {
+		line-height: 1.77777;
+		color: $grey;
+	}
+
+	&__input {
+		margin-bottom: 20px;
+		padding: 10px 15px;
+		font-family: $primary-font;
+		font-weight: 600;
+		line-height: 1.33333;
+		color: $white;
+		background: transparent;
+		border-color: solid $greySoft;
+		border-width: 0 0 1px 0;
+
+		&:focus {
+			border-color: $blue;
+		}
+
+		@media (min-width: $lg) {
+			font-size: 18px;
+		}
+	}
+
+	&__send {
+		@media (min-width: $lg) {
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1080px;
+		}
+	}
+
+	.checkbox {
+		border: 2px solid $grey;
+		border-radius: 4px;
+		margin-bottom: 2em;
+	}
+
+	.checkbox__label {
+		color: $grey;
+
+		a {
+			font-weight: 700;
+		}
+
+		@media (min-width: $lg) {
+			font-size: 16px;
+		}
+	}
+
+	button {
+		display: inline-block;
+		margin: 0 auto;
+		font-weight: 700;
+		line-height: 1.38888;
+		color: $greySoft;
+		background: $darkBlue;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 6px;
+		padding: 10px 30px;
+		cursor: pointer;
+		transition: background-color 0.3s ease, color 0.3s ease;
+
+		@media (min-width: $lg) {
+			margin: 0;
+			padding: 15px 100px;
+			font-size: 18px;
+		}
+
+		&:hover {
+			background: $white;
+			color: $blue;
+		}
+	}
 }

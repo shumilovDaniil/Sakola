@@ -1,257 +1,253 @@
-@import "global";
+@import 'global';
 
-@import "_header";
-@import "_first";
-@import "_feedback";
-@import "_footer";
-@import "_quote";
-@import "_choose";
-@import "_mission";
-@import "_gallery";
-@import "_teachers";
-@import "_achievements";
-@import "_location";
-
+@import '_header';
+@import '_first';
+@import '_feedback';
+@import '_footer';
+@import '_quote';
+@import '_choose';
+@import '_mission';
+@import '_gallery';
+@import '_teachers';
+@import '_achievements';
+@import '_location';
 
 .header,
 .main {
-  color: $greySoft;
-  background: #2E2E36;
+	color: $greySoft;
+	background: #2e2e36;
 }
 
 .header {
-  @media (min-width: $md) {
-    padding: 0 0 100px;
-  }
+	@media (min-width: $md) {
+		padding: 0 0 30px;
+	}
 
-  &__inner {
-    justify-content: center;
-  }
+	&__inner {
+		justify-content: center;
+	}
 
-  &__logo {
-    a {
-      flex-direction: column;
-    }
-  
-    img {
-      margin: 0;
-    
-      @media (min-width: $xl) {
-        margin: 0;
-      }
-    }
+	&__logo {
+		a {
+			flex-direction: column;
+		}
 
-    @media (min-width: $xxl) {
-      padding: 0 100px;
-    }
-  }
+		img {
+			margin: 0;
 
-  &__subtitle {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 1.33333;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: $grey;
-    font-family: $secondary-font;
-  }
+			@media (min-width: $xl) {
+				margin: 0;
+			}
+		}
 
-  &__help {
-    display: none;
-  }
+		@media (min-width: $xxl) {
+			padding: 0 50px;
+		}
+	}
 
-  &__burger {
-    margin-left: auto;
-  }
+	&__subtitle {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 1.33333;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $grey;
+		font-family: $secondary-font;
+	}
+
+	&__help {
+		display: none;
+	}
+
+	&__burger {
+		margin-left: auto;
+	}
 }
 
 .quote {
+	&__inner {
+		padding: 30px 0;
+		@media (min-width: $xl) {
+			padding: 60px 0;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			max-width: 100%;
+		}
+	}
 
-  &__inner {
+	&__left {
+		@media (min-width: $xl) {
+			text-align: left;
+			max-width: 805px;
+		}
+	}
 
-    @media (min-width: $xl) {
-      margin: 0;
-      display: flex;
-      justify-content: space-between;
-      max-width: 100%;
-    }
-  }
-  
-  &__left {
-    
-    @media (min-width: $xl) {
-      text-align: left;
-      max-width: 805px;
-    }
-  }
+	&__right {
+		position: relative;
 
-  &__right{ 
-    position: relative;
+		@media (min-width: $xl) {
+			margin-right: 50px;
+		}
 
-    @media (min-width: $xl) {
-      margin-right: 50px;
-    }
+		img {
+			max-width: 100%;
 
-    img {
-      max-width: 100%;
+			&:nth-child(2) {
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform: translate(-20%, 10%);
+				z-index: -1;
+			}
+		}
+	}
 
-      &:nth-child(2) {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(-20%, 10%);
-        z-index: -1;
-      }
-    }
-  }
+	.quote__right--decor {
+		position: relative;
 
-  .quote__right--decor {
-    position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			right: 0;
+			transform: translate(55%, 80%);
+			background: transparent url(../img/content/element-1.png) no-repeat 50%
+				50% / contain;
+			width: 57.23px;
+			height: 74.68px;
+		}
+	}
 
-    &::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      right: 0;
-      transform: translate(55%, 80%);
-      background: transparent url(../img/content/element-1.png) no-repeat 50% 50%/contain;;
-      width: 57.23px;
-      height: 74.68px;
-    }
-  }
+	.auth__inner {
+		margin-bottom: 2em;
 
-  .auth__inner {
-  margin-bottom: 2em;
-
-    @media (min-width: $xl) {
-      margin: 0 auto 0 0;
-    }
-  }
+		@media (min-width: $xl) {
+			margin: 0 auto 0 0;
+		}
+	}
 }
 
 .choose {
-  color: $greySoft;
-  background: $darkBlue;
-  
-  &__item {
-    background: $darkBlue;
-    border: 1px solid $blue;
-    border-radius: 8px;
-  
-    &:nth-child(even) {
-      background: $blue;
-    }
-  }
+	color: $greySoft;
+	background: $darkBlue;
+
+	&__item {
+		background: $darkBlue;
+		border: 1px solid $blue;
+		border-radius: 8px;
+
+		&:nth-child(even) {
+			background: $blue;
+		}
+	}
 }
 
 .teachers {
+	&__item {
+		@media (min-width: $lg) {
+			flex: 0 0 23%;
+		}
 
-  &__item {
-
-    @media (min-width: $lg) {
-      flex: 0 0 23%;
-    } 
-
-    @media (min-width: $xl) {
-      flex: 0 0 20%;
-    } 
-  }
+		@media (min-width: $xl) {
+			flex: 0 0 20%;
+		}
+	}
 }
 
 .achievements {
-  margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 .vision {
+	.mission__right {
+		align-items: flex-end;
 
-  .mission__right {
-    align-items: flex-end;
+		@media (min-width: $xl) {
+			width: 40%;
+		}
+	}
 
-    @media (min-width: $xl) {
-      width: 40%;
-    }
-  }
+	.mission__left {
+		flex: 0 0 auto;
 
-  .mission__left {
-    flex: 0 0 auto;
+		@media (min-width: $xl) {
+			width: 60%;
+		}
 
-    @media (min-width: $xl) {
-      width: 60%;
-    }
+		@media (min-width: $xxl) {
+			padding-left: 50px;
+		}
 
-    @media (min-width: $xxl) {
-      padding-left: 50px;
-    }
-    
-    img {
-      max-width: 100%;
-      max-height: 100px;
-      object-fit: cover;
+		img {
+			max-width: 100%;
+			max-height: 100px;
+			object-fit: cover;
 
-      @media (min-width: $lg) {
-        max-height: 578px;
-        max-width: 223px;
-      }
-     
-      @media (min-width: $xl) {
-        max-height: 578px;
-        max-width: 283px;
-      }
+			@media (min-width: $lg) {
+				max-height: 578px;
+				max-width: 223px;
+			}
 
-      @media (min-width: $xxl) {
-        max-height: 679px;
-        max-width: 423px;
-      }
-    }
-  }
+			@media (min-width: $xl) {
+				max-height: 578px;
+				max-width: 283px;
+			}
 
-  .img__inner {
+			@media (min-width: $xxl) {
+				max-height: 679px;
+				max-width: 423px;
+			}
+		}
+	}
 
-    @media (min-width: $lg) {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-template-rows: auto;
-      grid-gap: 10px;
-      grid-template-areas: 'img-1 img-3'
-                            'img-2 img-3';
-    }
+	.img__inner {
+		@media (min-width: $lg) {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			grid-template-rows: auto;
+			grid-gap: 10px;
+			grid-template-areas:
+				'img-1 img-3'
+				'img-2 img-3';
+		}
 
-    @media (min-width: $xxl) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      // grid-gap: 40px;
-    }
-  }
- 
-  .img-1 {
-    grid-area: img-1;
-    align-self: end;
-    justify-self: end;
-  }
-  
-  .img-2 {
-    grid-area: img-2;
-    justify-self: end;
-  }
-  
-  .img-3 {
-    grid-area: img-3;
-  }
+		@media (min-width: $xxl) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			// grid-gap: 40px;
+		}
+	}
 
-  img {
-    width: 100%;
+	.img-1 {
+		grid-area: img-1;
+		align-self: end;
+		justify-self: end;
+	}
 
-    @media (min-width: $xl) {
-      width: auto;
-      height: auto;
-      max-width: 258px;
-      max-height: 478px;
-    }
+	.img-2 {
+		grid-area: img-2;
+		justify-self: end;
+	}
 
-    @media (min-width: $xxl) {
-      max-width: 458px;
-      max-height: 678px;
-    }
-  }
+	.img-3 {
+		grid-area: img-3;
+	}
+
+	img {
+		width: 100%;
+
+		@media (min-width: $xl) {
+			width: auto;
+			height: auto;
+			max-width: 258px;
+			max-height: 478px;
+		}
+
+		@media (min-width: $xxl) {
+			max-width: 458px;
+			max-height: 678px;
+		}
+	}
 }

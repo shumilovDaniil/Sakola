@@ -1,82 +1,77 @@
 .quote {
-  background: no-repeat top center url(../img/content/bg-fig.jpg);
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.77777;
-  color: $dark;
+	background: no-repeat top center url(../img/content/bg-fig.jpg);
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.77777;
+	color: $dark;
 
-  &__inner {
-    padding: 2em 0;
-    
-    @media (min-width: $md) {
-      margin: 0 auto;
-      max-width: 752px;
-      padding: 110px 0;
-    }
-  }
+	&__inner {
+		padding: 2em 0;
 
-  strong {
-    display: block;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 33px;
-    text-transform: uppercase;
-    color: $darkBlue;
-    
-    @media (min-width: $md) {
-      margin-bottom: 17px;
-      font-size: 24px;
-    }
-  }
+		@media (min-width: $md) {
+			max-width: 752px;
+			margin: 60px auto;
+		}
+	}
 
-  h2 {
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 2em;
-    line-height: 1.33333;
-    margin-bottom: 1em;
+	strong {
+		display: block;
+		font-weight: 600;
+		font-size: 1em;
+		line-height: 33px;
+		text-transform: uppercase;
+		color: $darkBlue;
 
-    @media (min-width: $md) {
-      font-size: 60px;
-      margin-bottom: 36px;
-    }
-  }
+		@media (min-width: $md) {
+			margin-bottom: 15px;
+			font-size: 24px;
+		}
+	}
 
-  p {
-    margin-bottom: 1em;
+	h2 {
+		font-family: $primary-font;
+		font-weight: 700;
+		font-size: 2em;
+		line-height: 1.33333;
+		margin-bottom: 1em;
 
-    @media (min-width: $md) {
-      margin-bottom: 104px;
-    }
-  }
+		@media (min-width: $md) {
+			font-size: 60px;
+			margin-bottom: 15px;
+		}
+	}
 
-  .auth {
+	p {
+		margin-bottom: 1em;
 
-    @media (min-width: $md) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+		@media (min-width: $md) {
+			margin-bottom: 30px;
+		}
+	}
 
-  .auth__inner {
+	.auth {
+		@media (min-width: $md) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 
-    @media (min-width: $md) {
-      transform: translateX(10%);
-    }
-  }
-  
-  .auth__sign {
-    
-    @media (min-width: $md) {
-      margin-bottom: 24px;
-    }
-  }
+	.auth__inner {
+		@media (min-width: $md) {
+			transform: translateX(10%);
+		}
+	}
 
-  img {
-    
-    @media (min-width: $md) {
-      object-fit: contain;
-    }
-  }
+	.auth__sign {
+		@media (min-width: $md) {
+			margin-bottom: 24px;
+		}
+	}
+
+	img {
+		@media (min-width: $md) {
+			object-fit: contain;
+		}
+	}
 }

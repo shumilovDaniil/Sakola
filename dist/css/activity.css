@@ -68,6 +68,10 @@ body {
   line-height: 1.75;
 }
 
+body.active {
+  overflow-y: hidden;
+}
+
 p {
   margin-bottom: 20px;
 }
@@ -81,7 +85,7 @@ p {
 .header,
 .slider,
 .feature {
-  background: #080A12;
+  background: #080a12;
   color: #fff;
 }
 
@@ -92,7 +96,7 @@ img {
 .logo {
   font-size: 2em;
   font-family: "MuseoModerno", sans-serif;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
   color: #fff;
 }
 
@@ -108,7 +112,7 @@ img {
 }
 
 .logo img {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 
 @media (min-width: 1200px) {
@@ -118,7 +122,7 @@ img {
 }
 
 .logo:hover {
-  color: #2459A8;
+  color: #2459a8;
 }
 
 .header__inner {
@@ -131,7 +135,7 @@ img {
 
 @media (min-width: 1200px) {
   .header__inner {
-    padding: 32px 0 84px;
+    padding: 30px 0 30px;
   }
 }
 
@@ -146,16 +150,44 @@ img {
   }
 }
 
+.header__list.active {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  transform: translate(0, 100px);
+  background: #080a12;
+  width: 100%;
+  height: 1000px;
+  z-index: 100;
+  padding: 30px 50px;
+  border-radius: 8px;
+  border: 1px solid #023aa2;
+}
+
+.header__list.active li {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.header__list.active a {
+  transition: color 0.3s ease;
+}
+
+.header__list.active a:hover {
+  color: #2459a8;
+}
+
 @media (min-width: 1440px) {
   .header__list li {
     font-family: "Cairo", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #EBECF0;
-    transition: color .3s ease;
+    color: #ebecf0;
+    transition: color 0.3s ease;
   }
   .header__list li:hover {
-    color: #2459A8;
+    color: #2459a8;
   }
   .header__list li + li {
     margin-left: 75px;
@@ -169,12 +201,12 @@ img {
 @media (min-width: 1440px) {
   .header__help {
     display: block;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    color: #EBECF0;
+    color: #ebecf0;
   }
 }
 
@@ -182,10 +214,10 @@ img {
   .header__help-tel {
     position: relative;
     margin-right: 63px;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
   }
   .header__help-tel:hover {
-    color: #2459A8;
+    color: #2459a8;
   }
   .header__help-tel span {
     margin-right: 25px;
@@ -196,12 +228,12 @@ img {
 @media (min-width: 1440px) {
   .header__help-search {
     position: absolute;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
     transform: translateX(140%);
     font-family: 'icomoon';
   }
   .header__help-search:hover {
-    color: #2459A8;
+    color: #2459a8;
   }
 }
 
@@ -209,11 +241,11 @@ img {
   font-size: 2em;
   font-family: 'icomoon';
   cursor: pointer;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__burger:hover {
-  color: #2459A8;
+  color: #2459a8;
 }
 
 @media (min-width: 1440px) {
@@ -224,14 +256,14 @@ img {
 
 .main {
   text-align: center;
-  color: #A3ABB6;
+  color: #a3abb6;
   padding-bottom: 2em;
 }
 
 @media (min-width: 768px) {
   .main {
     font-size: 16px;
-    padding-bottom: 211px;
+    padding-bottom: 60px;
   }
 }
 
@@ -246,7 +278,7 @@ img {
   font-weight: 700;
   line-height: 1.375;
   margin-bottom: 1em;
-  color: #EBECF0;
+  color: #ebecf0;
 }
 
 @media (min-width: 768px) {
@@ -267,18 +299,18 @@ img {
   display: inline-block;
   color: #fff;
   padding: 10px 30px 10px 55px;
-  border: 1px solid #EBECF0;
+  border: 1px solid #ebecf0;
   border-radius: 6px;
   font-family: "Cairo", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 34px;
-  transition: border .3s ease, background-color .3s ease;
+  transition: border 0.3s ease, background-color 0.3s ease;
 }
 
 .main a::before {
   position: absolute;
-  content: "\e901";
+  content: '\e901';
   font-family: 'icomoon';
   font-size: 20px;
   left: 0;
@@ -299,8 +331,8 @@ img {
 }
 
 .main a:hover {
-  border: 1px solid #080A12;
-  background: #080A12;
+  border: 1px solid #080a12;
+  background: #080a12;
 }
 
 @media (min-width: 768px) {
@@ -312,17 +344,18 @@ img {
 
 .calendar .eaec-events-calendar-component.jsx-3357571723 {
   border-radius: 14px;
+  padding: 30px;
 }
 
 .event-list {
-  background: #F9F9F9;
+  background: #f9f9f9;
   color: #363848;
   padding: 1em 0;
 }
 
 @media (min-width: 1024px) {
   .event-list {
-    padding: 70px 0 100px;
+    padding: 60px 0 60px;
   }
 }
 
@@ -351,11 +384,11 @@ img {
 }
 
 .event-list__item:first-child .event-list__when {
-  background: #FA814D;
+  background: #fa814d;
 }
 
 .event-list__item:last-child .event-list__when {
-  background: #5DCFFF;
+  background: #5dcfff;
 }
 
 @media (min-width: 480px) {
@@ -383,7 +416,7 @@ img {
   text-align: center;
   color: #fff;
   font-family: "Cairo", sans-serif;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 @media (min-width: 1024px) {
@@ -397,12 +430,12 @@ img {
 
 .event-list__when, .event-list__time {
   flex: 1 1 50%;
-  padding: .5em 0;
-  font-size: .9em;
+  padding: 0.5em 0;
+  font-size: 0.9em;
 }
 
 .event-list__when {
-  background: #FF4A55;
+  background: #ff4a55;
   border-radius: 6px 0 0 6px;
 }
 
@@ -474,7 +507,7 @@ img {
 }
 
 .event-list__content {
-  color: #080A12;
+  color: #080a12;
   font-size: 16px;
   line-height: 1.625;
 }
@@ -502,8 +535,8 @@ img {
 }
 
 .event-list__content strong {
-  color: #A3ABB6;
-  font-size: .8em;
+  color: #a3abb6;
+  font-size: 0.8em;
   font-weight: 600;
 }
 
@@ -516,7 +549,7 @@ img {
 }
 
 .event-list__content p {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 @media (min-width: 1024px) {
@@ -526,25 +559,25 @@ img {
 }
 
 .event-list__content a {
-  color: #023AA2;
+  color: #023aa2;
   font-weight: 700;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .event-list__content a:hover {
-  color: #080A12;
+  color: #080a12;
 }
 
 .event-list__link {
   display: inline-block;
-  background: #023AA2;
+  background: #023aa2;
   color: #fff;
   padding: 13px 57px;
   font-family: "Cairo", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.88888;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   border-radius: 6px;
   width: 100%;
   text-align: center;
@@ -558,12 +591,12 @@ img {
 }
 
 .event-list__link:hover {
-  background: #080A12;
+  background: #080a12;
 }
 
 .feedback {
   position: relative;
-  background: #023AA2;
+  background: #023aa2;
   color: #fff;
 }
 
@@ -576,7 +609,7 @@ img {
     width: 159px;
     left: 0;
     top: 0;
-    opacity: .15;
+    opacity: 0.15;
   }
 }
 
@@ -596,7 +629,7 @@ img {
 @media (min-width: 1200px) {
   .feedback__inner {
     justify-content: space-evenly;
-    padding: 100px 0;
+    padding: 60px 0;
   }
 }
 
@@ -653,25 +686,25 @@ img {
   border-radius: 6px;
   width: 100%;
   padding: 18px 20px;
-  background: #023AA2;
-  border: 1px solid #EBECF0;
-  color: #EBECF0;
-  font-size: .8em;
+  background: #023aa2;
+  border: 1px solid #ebecf0;
+  color: #ebecf0;
+  font-size: 0.8em;
   line-height: 1.38888;
   text-overflow: ellipsis;
   margin-bottom: 1em;
 }
 
 .feedback__input::-moz-placeholder {
-  color: #EBECF0;
+  color: #ebecf0;
 }
 
 .feedback__input:-ms-input-placeholder {
-  color: #EBECF0;
+  color: #ebecf0;
 }
 
 .feedback__input::placeholder {
-  color: #EBECF0;
+  color: #ebecf0;
 }
 
 @media (min-width: 480px) {
@@ -698,15 +731,15 @@ img {
   font-weight: 600;
   font-size: 1em;
   line-height: 1.5;
-  color: #023AA2;
+  color: #023aa2;
   background: #fff;
   text-transform: uppercase;
-  transition: color .3s ease, background-color .3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
 }
 
 .feedback__btn:hover {
-  background: #080A12;
+  background: #080a12;
   color: #fff;
 }
 
@@ -719,15 +752,15 @@ img {
 
 .footer {
   font-family: "Cairo", sans-serif;
-  background: #080A12;
-  color: #A3ABB6;
+  background: #080a12;
+  color: #a3abb6;
   padding-top: 2em;
   line-height: 1.875;
 }
 
 @media (min-width: 1440px) {
   .footer {
-    padding: 100px 0 20px;
+    padding: 60px 0 0;
   }
 }
 
@@ -776,7 +809,7 @@ img {
 }
 
 .footer__list li {
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 @media (min-width: 1440px) {
@@ -786,7 +819,7 @@ img {
 }
 
 .footer__list li:hover {
-  color: #2459A8;
+  color: #2459a8;
 }
 
 .footer__logo-footer {
@@ -797,7 +830,7 @@ img {
   font-weight: 700;
   font-size: 1em;
   line-height: 1.85;
-  color: #EBECF0;
+  color: #ebecf0;
   margin-bottom: 1em;
 }
 
@@ -843,11 +876,11 @@ img {
 }
 
 .footer__addresses a {
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer__addresses a:hover {
-  color: #2459A8;
+  color: #2459a8;
 }
 
 .footer__addresses .address,
@@ -903,11 +936,11 @@ img {
 }
 
 .footer__social-list span {
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer__social-list span:hover {
-  color: #2459A8;
+  color: #2459a8;
 }
 
 .footer__download {
@@ -936,14 +969,14 @@ img {
   position: relative;
   padding: 11px 45px 16px 76px;
   border-radius: 6px;
-  background: #171B2C;
+  background: #171b2c;
   font-size: 14px;
   width: 100%;
   text-align: center;
   line-height: 1.71428;
-  color: #EBECF0;
+  color: #ebecf0;
   font-family: 'Lato';
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 }
 
 @media (min-width: 480px) {
@@ -957,11 +990,11 @@ img {
   font-weight: 900;
   font-size: 20px;
   line-height: 1.2;
-  color: #EBECF0;
+  color: #ebecf0;
 }
 
 .footer__download-btn:hover {
-  background: #023AA2;
+  background: #023aa2;
 }
 
 .footer__download-btn::after {
@@ -997,9 +1030,9 @@ img {
 }
 
 .footer__policy {
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
-  color: #EBECF0;
+  color: #ebecf0;
   font-weight: 600;
   border-top: 1px solid rgba(243, 243, 243, 0.08);
   padding: 25px 0;
@@ -1057,21 +1090,21 @@ img {
 
 .footer__policy a {
   font-weight: 400;
-  transition: color .3s ease;
-  color: #A3ABB6;
+  transition: color 0.3s ease;
+  color: #a3abb6;
 }
 
 .footer__policy a:hover {
-  color: #2459A8;
+  color: #2459a8;
 }
 
 .footer__policy strong span {
-  color: #D93838;
+  color: #d93838;
 }
 
 .header, .main {
-  color: #EBECF0;
-  background: #023AA2;
+  color: #ebecf0;
+  background: #023aa2;
 }
 
 .header a, .main a {
@@ -1079,5 +1112,5 @@ img {
 }
 
 .header a:hover, .main a:hover {
-  color: #A3ABB6;
+  color: #a3abb6;
 }

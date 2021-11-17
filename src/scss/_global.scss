@@ -1,30 +1,34 @@
-@import "vars";
-@import "reset";
+@import 'vars';
+@import 'reset';
 
 body {
-  overflow-x: hidden;
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 1.75;
+	overflow-x: hidden;
+	font-family: $secondary-font;
+	font-size: 16px;
+	line-height: 1.75;
+
+	&.active {
+		overflow-y: hidden;
+	}
 }
 
 p {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .container {
-  max-width: 1616px;
-  padding: 0 20px;
-  margin: 0 auto;
+	max-width: 1616px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
 .header,
 .slider,
 .feature {
-  background: $dark;
-  color: $white;
+	background: $dark;
+	color: $white;
 }
 
 img {
-  border-radius: 6px;
+	border-radius: 6px;
 }

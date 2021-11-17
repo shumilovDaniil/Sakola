@@ -1,105 +1,104 @@
 .choose {
-  padding: 2em 0;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.75;
-  color: $dark;
-  background: #F9F9F9;
-  
-  @media (min-width: $xxl) {
-    padding: 70px 0;
-  }
-  
-  @media (min-width: $xl) {
-    font-size: 16px;
-    line-height: 28px;
-  }
+	padding: 2em 0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.75;
+	color: $dark;
+	background: #f9f9f9;
 
-  &__inner {
-    max-width: 600px;
-    margin-bottom: 1em;
+	@media (min-width: $xxl) {
+		padding: 60px 0;
+	}
 
-    @media (min-width: $md) {
-      margin: 0 auto;
-    }
-  }
+	@media (min-width: $xl) {
+		font-size: 16px;
+		line-height: 28px;
+	}
 
-  h2 {
-    font-size: 2em;
-    font-family: $primary-font;
-    font-weight: 700;
-    line-height: 1.33333;
-    margin-bottom: 1em;
+	&__inner {
+		max-width: 600px;
+		margin-bottom: 1em;
 
-    @media (min-width: $md) {
-      margin: 0 auto 8px;
-      font-size: 60px;
-    }
-  }
+		@media (min-width: $md) {
+			margin: 0 auto;
+		}
+	}
 
-  &__list {
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	h2 {
+		font-size: 2em;
+		font-family: $primary-font;
+		font-weight: 700;
+		line-height: 1.33333;
+		margin-bottom: 1em;
 
-    @media (min-width: $sm) {
-      justify-content: space-evenly;
-    }
+		@media (min-width: $md) {
+			margin: 0 auto 8px;
+			font-size: 60px;
+		}
+	}
 
-    @media (min-width: $xl) {
-      justify-content: center;
-    }
-  }
+	&__list {
+		text-align: left;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
-  &__item {
-    background: $white;
-    border: 1px solid $greySoft;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 1em;
-    
-    @media (min-width: $md) {
-      width: 20%;
-    }
-    
-    @media (min-width: $md) {
-      width: 30%;
-    }
+		@media (min-width: $sm) {
+			justify-content: space-evenly;
+		}
 
-    @media (min-width: $xl) {
-      width: 27%;
-      margin: 15px;
-      padding: 60px 60px 70px 40px;
-    }
+		@media (min-width: $xl) {
+			justify-content: center;
+		}
+	}
 
-    p {
-      margin-bottom: 0;
-    }
-    
-  }
+	&__item {
+		background: $white;
+		border: 1px solid $greySoft;
+		border-radius: 8px;
+		padding: 20px;
+		margin-bottom: 1em;
 
-  img {
-    width: auto;
-    height: 28px;
-    margin-bottom: .5em;
+		@media (min-width: $md) {
+			width: 20%;
+		}
 
-    @media (min-width: $xl) {
-      height: 38px;
-      width: 38px;
-      margin-bottom: 30px;
-    }
-  }
+		@media (min-width: $md) {
+			width: 30%;
+		}
 
-  h4 {
-    margin-bottom: 1em;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 1.5em;
-    line-height: 1.06666;
+		@media (min-width: $xl) {
+			width: 27%;
+			margin: 15px;
+			padding: 30px;
+		}
 
-    @media (min-width: $xl) {
-      font-size: 30px;
-    }
-  }
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	img {
+		width: auto;
+		height: 28px;
+		margin-bottom: 0.5em;
+
+		@media (min-width: $xl) {
+			height: 38px;
+			width: 38px;
+			margin-bottom: 10px;
+		}
+	}
+
+	h4 {
+		margin-bottom: 15px;
+		font-family: $primary-font;
+		font-weight: 700;
+		font-size: 1.5em;
+		line-height: 1.06666;
+
+		@media (min-width: $xl) {
+			font-size: 30px;
+		}
+	}
 }
